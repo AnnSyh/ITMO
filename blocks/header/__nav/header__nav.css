@@ -11,3 +11,12 @@
     flex: 1;
     text-align: center;
 }
+.header__nav li ul {
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    .header__nav {
+      display: none;
+    }
+  }

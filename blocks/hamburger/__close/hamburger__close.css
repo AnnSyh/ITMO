@@ -1,0 +1,23 @@
+.hamburger__close,
+.hamburger__close::before,
+.hamburger__close::after {
+	display: block;
+	position: absolute;
+	width: 100%;
+	height: 2px;
+	background-color: #616161;
+	transition-duration: 0.25s;
+}
+
+.hamburger__close {
+	width: calc(100% - 20px);
+	left: 10px;
+}
+.hamburger__close::before {
+    content: "";
+	top: -8px;
+}
+.hamburger__close::after {
+    content: "";
+	top: 8px;
+}
