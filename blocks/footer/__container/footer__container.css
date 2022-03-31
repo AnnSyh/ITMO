@@ -1,6 +1,6 @@
-.footer__container {
+/* .footer__container {
   border: 1px solid green;
-}
+} */
 .footer__row {
   display: flex;
     align-items: stretch;
@@ -13,9 +13,6 @@
   line-height: 19px;
   flex-direction: column;
   margin-top: 94px;
-  /* max-width: 263px; */
-
-  border: 1px solid red;
 }
 .footer__col:first-child {
   margin-top: 0;
@@ -97,21 +94,21 @@
     margin-bottom: 12px;
   }
 
-
-
-
 @media screen and (max-width:768px) { 
   .footer{
     font-size: 12px;
     line-height: 20px;
   }
+
+  .container.footer__container {
+    margin: 0 15px;
+  }
+
 }
 
 @media screen and (max-width:600px) {
 
-  .container {
-    margin: 0 15px;
-  }
+
 
   .footer__txt {
     display: none;
