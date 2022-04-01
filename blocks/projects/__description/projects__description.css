@@ -1,0 +1,19 @@
+.projects__description {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    /* or 143% */
+    letter-spacing: 0.1px;
+    color: #FFFFFF;
+    margin: 20px 0 0 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    box-orient: vertical;
+    position: relative;
+    z-index: 3;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    max-width: 190px;
+}

@@ -1,0 +1,10 @@
+.projects__numbers {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    /* identical to box height, or 167% */
+    letter-spacing: 0.1px;
+    color: #FFFFFF;
+    margin: 0;
+}

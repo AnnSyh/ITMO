@@ -1,0 +1,7 @@
+.projects__cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 30px;
+    height: 530px;
+}

@@ -2,3 +2,24 @@
 @import url(../vendor/fonts.css);
 
 @import url(../blocks/page/page.css);
+
+@import url(../blocks/projects/projects.css);
+@import url(../blocks/projects/__title/projects__title.css);
+@import url(../blocks/projects/__subtitle/projects__subtitle.css);
+@import url(../blocks/projects/__subtitle/_active/projects__subtitle_active.css);
+@import url(../blocks/projects/__item/projects__item.css);
+@import url(../blocks/projects/__item/_active/projects__item_active.css);
+@import url(../blocks/projects/__menu/projects__menu.css);
+@import url(../blocks/projects/__list/projects__list.css);
+@import url(../blocks/projects/__card/projects__card.css);
+@import url(../blocks/projects/__logo/projects__logo.css);
+@import url(../blocks/projects/__description/projects__description.css);
+@import url(../blocks/projects/__button/projects__button.css);
+@import url(../blocks/projects/__text/projects__text.css);
+@import url(../blocks/projects/__arrow-button/projects__arrow-button.css);
+@import url(../blocks/projects/__arrow-button/_reverse/projects__arrow-button_reverse.css);
+@import url(../blocks/projects/__container/projects__container.css);
+@import url(../blocks/projects/__numbers/projects__numbers.css);
+@import url(../blocks/projects/__text-accent/projects__text-accent.css);
+@import url(../blocks/projects/__numbering/projects__numbering.css);
+@import url(../blocks/projects/__cards/projects__cards.css);

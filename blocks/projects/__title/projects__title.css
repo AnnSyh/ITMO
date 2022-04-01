@@ -1,0 +1,12 @@
+.projects__title {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 68px;
+    /* identical to box height, or 189% */
+    text-align: center;
+    letter-spacing: 0.1px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin: 0 auto 30px auto;
+}
