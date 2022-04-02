@@ -3,6 +3,7 @@
     min-width: 320px;
     margin: 0 auto;
     font-family: "Open Sans", "Arial", sans-serif;
+    overflow: hidden;
 
     background-color: #001337;
     color:#fff;

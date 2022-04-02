@@ -1,0 +1,135 @@
+* {box-sizing:border-box;}
+   
+body {
+    background: #5f5f65;
+}
+
+.dws-menu *{
+ margin: 0;
+ padding: 0;
+}
+.dws-menu {
+ position: relative;
+ width: 100%;
+}
+
+.dws-menu ul, .dws-menu ol {
+ list-style: none;
+}
+.dws-menu > ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: flex-start;
+    align-items: flex-start;
+}
+.dws-menu > ul li {
+ position: relative;
+}
+
+
+.dws-menu > ul li a{
+ display: block;
+ padding: 15px 30px 15px 40px;
+ font-size: 14px;
+ color: #454547;
+ text-decoration: none;
+ text-transform:uppercase;
+ transition: all 0.3s ease;
+}
+.dws-menu li a:hover{
+ color: #ffffff;
+ transition: all 0.3s ease;
+}
+
+/*sub menu*/
+.dws-menu li ul{
+  position: absolute;
+  width: 100%;
+  top: 100%;
+  display: none;
+}
+
+.dws-menu li > ul li a{
+ padding: 10px;
+ text-transform: none;
+}
+.dws-menu li > ul li ul{
+ position: absolute;
+ left: 154px;
+top: -1px;
+}
+.dws-menu li:hover > ul{
+ display: block;
+}
+
+/*==== MEDIA ====*/
+.dws-menu [type="checkbox"], .dws-menu label.toggleSubmenu{
+ display: none;
+}
+.dws-menu label.toggleMenu{
+ display: none;
+ padding: 15px 40px;
+ text-transform: uppercase;
+ font-size: 14px;
+ cursor: pointer;
+ position: relative;
+}
+
+@media all and (max-width: 1060px){
+
+  .dws-menu li:hover > ul {
+    display: none;
+}
+
+ .dws-menu{
+  overflow: hidden;
+ }
+ .dws-menu ul{
+  display: block;
+  max-height: 0;
+  transition: max-height 0.3s;
+ }
+ .dws-menu li>ul li ul{
+  position: absolute;
+  right: auto;
+  top: auto;
+ }
+.dws-menu li > ul li ul li a{padding-left:30px;}
+ .dws-menu label.toggleMenu{
+  display: block;
+ }
+ input.toggleMenu:checked + label.toggleMenu{
+  background: #000;
+  color: #fff;
+ }
+ input.toggleMenu:checked ~ ul, 
+ input.toggleSubmenu:checked ~ ul{
+  display: block;
+  position: relative;
+  max-height: 5000px;
+  transition: max-height 2s ease-in;
+  width: 100%;
+  top: 0;
+  left: 0;
+ }
+ .dws-menu label.toggleSubmenu{
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  display: block;
+ }
+.dws-menu ul li ul li label.toggleSubmenu{
+  top: -4px;
+}
+ input.toggleSubmenu:checked ~ a{
+  background: #454547;
+  color: #fff;
+ }
+
+}
+

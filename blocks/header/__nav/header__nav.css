@@ -14,7 +14,9 @@
 .header__nav li ul {
     display: none;
 }
+
 .header__link:hover + ul,
+.header__nav li.active ul,
 .header__nav li ul.active {
     display: block;
     position: absolute;
@@ -22,7 +24,7 @@
     padding: 0;
     margin: 0;
     background-color: #000D26;
-    top: 140%;
+    top: 100%;
     width: 100%;
 }
 

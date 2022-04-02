@@ -10,14 +10,42 @@ const menuBtn = document.querySelector(".hamburger");
 const subMenu = document.querySelector(".sub-menu");
 const subMenus = document.querySelectorAll(".sub-menu");
 
-subMenus.forEach(element => {
-  element.addEventListener('click', (evt) => {
-    evt.preventDefault();                // запрещаем переход по ссылке
-    const sub = evt.target.parentElement.querySelector('.sub') // ищем li именно этой ссылки
-    // debugger
-    sub.classList.toggle("active");
+
+  subMenus.forEach(element => {
+
+    if (window.innerWidth < 868) {
+      console.log('innerWidth < 868');
+
+    element.addEventListener('click', (evt) => {
+      evt.preventDefault();                // запрещаем переход по ссылке
+      const sub = evt.target.parentElement // ищем li именно этой ссылки
+      // debugger
+      sub.classList.toggle("active");
+    });
+
+  } else {
+
+    element.addEventListener('mouseover', (evt) => {
+      evt.preventDefault();                // запрещаем переход по ссылке
+      const sub = evt.target.parentElement // ищем li именно этой ссылки
+      // debugger
+      sub.classList.toggle("active");
+    });
+
+  }
   });
-});
+
+
+//   subMenus.forEach(element => {
+//     element.addEventListener('mouseover', (evt) => {
+//       evt.preventDefault();                // запрещаем переход по ссылке
+//       const sub = evt.target.parentElement // ищем li именно этой ссылки
+//       // debugger
+//       sub.classList.toggle("active");
+//     });
+//   });
+
+// }
 
 
 // -------------------- задаем попап------------------------
