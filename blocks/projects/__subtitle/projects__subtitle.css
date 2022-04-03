@@ -2,9 +2,6 @@
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
-    /*line-height: 22px;*/
-    /*display: flex;*/
-    /*align-items: center;*/
     text-align: center;
     color: #FFFFFF;
     text-transform: uppercase;
@@ -14,4 +11,11 @@
 
 .projects__subtitle:hover {
     cursor: pointer;
+}
+
+@media screen and (max-width: 1195px) {
+    .projects__subtitle {
+        font-size: 14px;
+        line-height: 19px;
+    }
 }

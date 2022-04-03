@@ -14,3 +14,20 @@
     padding: 0;
     margin-left: 174px;
 }
+
+@media screen and (max-width: 912px) {
+    .projects__button {
+        width: 32px;
+        height: 32px;
+        margin-left: 146px;
+    }
+}
+
+@media screen and (max-width: 511px) {
+    .projects__button {
+        width: 20px;
+        height: 20px;
+        margin-left: 100px;
+        background-size: 12px;
+    }
+}

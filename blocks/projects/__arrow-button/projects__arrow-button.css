@@ -9,3 +9,12 @@
 .projects__arrow-button:hover {
     cursor: pointer;
 }
+
+@media screen and (max-width: 769px) {
+    .projects__arrow-button {
+        width: 24px;
+        height: 24px;
+        background-position: center;
+        background-size: cover;
+    }
+}

@@ -4,3 +4,4 @@ import ProjectsSlider from "./ProjectsSlider.js";
 const projectSlider = new ProjectsSlider(projectsCards);
 projectSlider.setEventListenersToProjectButtons();
 projectSlider.displayCards(projectsCards);
+projectSlider.setEventListenersToWindowAndDocument();

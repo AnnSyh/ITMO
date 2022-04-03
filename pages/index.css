@@ -23,3 +23,5 @@
 @import url(../blocks/projects/__text-accent/projects__text-accent.css);
 @import url(../blocks/projects/__numbering/projects__numbering.css);
 @import url(../blocks/projects/__cards/projects__cards.css);
+@import url(../blocks/projects/__subitem/projects__subitem.css);
+@import url(../blocks/projects/__submenu/projects__submenu.css);

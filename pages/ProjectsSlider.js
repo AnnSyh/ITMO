@@ -41,6 +41,7 @@ class ProjectsSlider {
 
         this._rightArrowButtonHandle = this._rightArrowButtonHandle.bind(this);
         this._leftArrowButtonHandle = this._leftArrowButtonHandle.bind(this);
+        this._changeNumberOfCardsAtPage = this._changeNumberOfCardsAtPage.bind(this);
     }
 
     // ФУНКЦИИ, КОТОРЫЕ ДЕЛАЮТ АКТИВНЫМИ И НЕАКТИВНЫМИ КНОПКИ С НАЗВАНИЕМ КАТЕГОРИЙ ПРОЕКТОВ
@@ -166,6 +167,35 @@ class ProjectsSlider {
         this._setEventListenersToProjectButton(this._governmentProjectsButton, this._arrayOfGovernmentProjects);
         this._setEventListenersToProjectButton(this._specialProjectsButton, this._arrayOfSpecialProjects);
         this._setEventListenersToProjectButton(this._currentProjectsButton, this._arrayOfCurrentProjects);
+    }
+
+    _changeNumberOfCardsAtPage() {
+        if (document.documentElement.clientWidth > 1195) {
+            this._numberOfCardsPerPage = 8;
+            this._currentPageNumber = 1;
+
+            this.displayCards(this._currentArrayOfCards);
+        }
+
+        if (document.documentElement.clientWidth <= 1195) {
+            this._numberOfCardsPerPage = 6;
+            this._currentPageNumber = 1;
+
+            this.displayCards(this._currentArrayOfCards);
+        }
+
+        if (document.documentElement.clientWidth <= 767) {
+            this._numberOfCardsPerPage = 4;
+            this._currentPageNumber = 1;
+
+            this.displayCards(this._currentArrayOfCards);
+        }
+    }
+
+    setEventListenersToWindowAndDocument () {
+        window.addEventListener("resize", this._changeNumberOfCardsAtPage);
+
+        document.addEventListener('DOMContentLoaded', this._changeNumberOfCardsAtPage);
     }
 }
 

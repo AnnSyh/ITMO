@@ -20,6 +20,21 @@
     border-radius: 10px;
     top: 0;
     left: 0;
-    /*z-index: 1;*/
     mix-blend-mode: multiply;
+}
+
+@media screen and (max-width: 912px) {
+    .projects__card {
+        width: 210px;
+        height: 199px;
+        padding: 16px;
+    }
+}
+
+@media screen and (max-width: 511px) {
+    .projects__card {
+        width: 140px;
+        height: 130px;
+        padding: 10px;
+    }
 }
