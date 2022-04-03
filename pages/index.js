@@ -10,42 +10,20 @@ const menuBtn = document.querySelector(".hamburger");
 const subMenu = document.querySelector(".sub-menu");
 const subMenus = document.querySelectorAll(".sub-menu");
 
+const dropdownLi = document.querySelectorAll(".dropdown");
+const dropdownContent = document.querySelectorAll(".dropdown-content");
 
-  subMenus.forEach(element => {
 
-    if (window.innerWidth < 868) {
-      console.log('innerWidth < 868');
 
+
+dropdownLi.forEach(element => {
     element.addEventListener('click', (evt) => {
-      evt.preventDefault();                // запрещаем переход по ссылке
-      const sub = evt.target.parentElement // ищем li именно этой ссылки
-      // debugger
-      sub.classList.toggle("active");
+      const dropdownContentParent = evt.target.parentElement // ищем li именно этой ссылки
+      debugger
+      dropdownContentParent.classList.toggle("active");
     });
-
-  } else {
-
-    element.addEventListener('mouseover', (evt) => {
-      evt.preventDefault();                // запрещаем переход по ссылке
-      const sub = evt.target.parentElement // ищем li именно этой ссылки
-      // debugger
-      sub.classList.toggle("active");
-    });
-
-  }
   });
 
-
-//   subMenus.forEach(element => {
-//     element.addEventListener('mouseover', (evt) => {
-//       evt.preventDefault();                // запрещаем переход по ссылке
-//       const sub = evt.target.parentElement // ищем li именно этой ссылки
-//       // debugger
-//       sub.classList.toggle("active");
-//     });
-//   });
-
-// }
 
 
 // -------------------- задаем попап------------------------
@@ -68,12 +46,12 @@ function closeConfirm(evt) {
 //подтверждение удаления
 function handleConfirmDelete() {
   popupConfirmation.openPopup(); //открываем окно подтверждения
-    console.log('handleConfirmDelete!!!!');
-    
+  console.log('handleConfirmDelete!!!!');
+
 }
 function handelMenu() {
-    console.log('handelMenu!!!!');
-    
+  console.log('handelMenu!!!!');
+
 }
 
 //вешаем событие на кнопки(открывющие попапы с формами)

@@ -15,28 +15,45 @@
     display: none;
 }
 
-.header__link:hover + ul,
-.header__nav li.active ul,
-.header__nav li ul.active {
-    display: block;
-    position: absolute;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    background-color: #000D26;
-    top: 100%;
-    width: 100%;
-}
-
-.sub-menu {
-    position: relative;
-}
 
 .active li:hover{
     background-color: #001337;
 }
 
-
+.dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+    list-style-type: none;
+    padding: 0;
+  
+  }
+  
+  .dropdown-content li {
+    list-style: none;
+    padding: 0;
+  }
+  .dropdown-content li a{
+    display: block;
+  }
+  .dropdown-content .header__link:hover::after {
+    content: none;
+  }
+  .dropdown-content .header__link:hover{
+    background-color: #009FAC;
+  }
+  
+  .dropdown.active .dropdown-content,
+  .dropdown:hover .dropdown-content {
+      display: block;
+    }
+  
 
 
 @media screen and (max-width: 868px) {
