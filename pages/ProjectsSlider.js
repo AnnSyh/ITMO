@@ -42,6 +42,8 @@ class ProjectsSlider {
         this._rightArrowButtonHandle = this._rightArrowButtonHandle.bind(this);
         this._leftArrowButtonHandle = this._leftArrowButtonHandle.bind(this);
         this._changeNumberOfCardsAtPage = this._changeNumberOfCardsAtPage.bind(this);
+
+        this._selectProjectButton = document.querySelector('.projects__submenu');
     }
 
     // ФУНКЦИИ, КОТОРЫЕ ДЕЛАЮТ АКТИВНЫМИ И НЕАКТИВНЫМИ КНОПКИ С НАЗВАНИЕМ КАТЕГОРИЙ ПРОЕКТОВ
@@ -162,6 +164,30 @@ class ProjectsSlider {
         })
     }
 
+    _handleSelectProjectButtonChange(arrayOfProjects) {
+        this._currentPageNumber = 1;
+
+        this._currentArrayOfCards = arrayOfProjects;
+
+        this.displayCards(arrayOfProjects);
+    }
+
+    setEventListenersToSelectProjectButtons() {
+        this._selectProjectButton.addEventListener('change', (event) => {
+            if (event.currentTarget.value === 'Все проекты') {
+                this._handleSelectProjectButtonChange(this._projectCards);
+            }
+            if (event.currentTarget.value === 'Гос. проекты') {
+                this._handleSelectProjectButtonChange(this._arrayOfGovernmentProjects);
+            }
+            if (event.currentTarget.value === 'Спецпрограммы') {
+                this._handleSelectProjectButtonChange(this._arrayOfSpecialProjects);
+            }
+            if (event.currentTarget.value === 'В разработке') {
+                this._handleSelectProjectButtonChange(this._arrayOfCurrentProjects);
+            }
+        })
+    }
     setEventListenersToProjectButtons() {
         this._setEventListenersToProjectButton(this._allProjectsButton, this._projectCards);
         this._setEventListenersToProjectButton(this._governmentProjectsButton, this._arrayOfGovernmentProjects);
