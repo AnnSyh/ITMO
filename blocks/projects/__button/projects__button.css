@@ -15,6 +15,10 @@
     margin-left: 174px;
 }
 
+.projects__button:hover {
+    cursor: pointer;
+}
+
 @media screen and (max-width: 912px) {
     .projects__button {
         width: 32px;
