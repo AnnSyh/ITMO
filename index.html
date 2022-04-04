@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="./pages/index.css">
 
     <link rel="stylesheet" href="./vendor/likely/likely.css">
@@ -20,31 +20,31 @@
             <img class="logo" src="./images/burger-menu.svg" alt="бургер">
         </div>
 
-    <div class="container header__container">
-                <img class="logo header__container__logo" src="./images/header-logo.svg" alt="логотип ИТМО">
-                <ul class="header__nav">
-                    <li><a class="header__link header__link_active" href="#">О нас</a></li>
-                    <li><a class="header__link" href="#">Лаборатория</a></li>
-                    <li><a class="header__link" href="#">Проекты</a></li>
-                    <li class="dropdown">
-                        <a class="header__link dropbtn"  href="#">Образование</a>
-                        <ul class="dropdown-content">
-                            <li><a class="header__link" href="#">Магистратура</a></li>
-                            <li><a class="header__link" href="#">Аспирантура</a></li>
-                        </ul>
-                    </li>
-                    <li><a class="header__link" href="#">Публикации</a></li>
-                    <li><a class="header__link" href="#">Команда</a></li>
-                    <li><a class="header__link" href="#">Связаться</a></li>
-                </ul>
-    </div>
+        <div class="container header__container">
+            <img class="logo header__container__logo" src="./images/header-logo.svg" alt="логотип ИТМО">
+            <ul class="header__nav">
+                <li><a class="header__link header__link_active" href="#">О нас</a></li>
+                <li><a class="header__link" href="#">Лаборатория</a></li>
+                <li><a class="header__link" href="#">Проекты</a></li>
+                <li class="dropdown">
+                    <a class="header__link dropbtn" href="#">Образование</a>
+                    <ul class="dropdown-content">
+                        <li><a class="header__link" href="#">Магистратура</a></li>
+                        <li><a class="header__link" href="#">Аспирантура</a></li>
+                    </ul>
+                </li>
+                <li><a class="header__link" href="#">Публикации</a></li>
+                <li><a class="header__link" href="#">Команда</a></li>
+                <li><a class="header__link" href="#">Связаться</a></li>
+            </ul>
+        </div>
     </header>
     <!--  -->
     <main class="content">
-        <section class="">
-            
-          
-          <div class="projects">
+        <section class="container">
+
+
+            <div class="projects">
                 <h2 class="projects__title">Наши проекты</h2>
                 <nav class="projects__menu">
                     <ul class="projects__list">
@@ -61,29 +61,34 @@
                             <h3 class="projects__subtitle" id="projects-current">В разработке</h3>
                         </li>
                     </ul>
-                    <select class="projects__submenu" >
-            <!--            <option selected disabled hidden value="">People</option>-->
-                        <option class="projects__subitem" value="Все проекты" id="projects-all-option">Все проекты</option>
-                        <option class="projects__subitem" value="Гос. проекты" id="projects-gos-option">Гос. проекты</option>
-                        <option class="projects__subitem" value="Спецпрограммы" id="projects-special-option">Спецпрограммы</option>
-                        <option class="projects__subitem" value="В разработке" id="projects-current-option">В разработке</option>
+                    <select class="projects__submenu">
+                        <!--            <option selected disabled hidden value="">People</option>-->
+                        <option class="projects__subitem" value="Все проекты" id="projects-all-option">Все проекты
+                        </option>
+                        <option class="projects__subitem" value="Гос. проекты" id="projects-gos-option">Гос. проекты
+                        </option>
+                        <option class="projects__subitem" value="Спецпрограммы" id="projects-special-option">
+                            Спецпрограммы</option>
+                        <option class="projects__subitem" value="В разработке" id="projects-current-option">В разработке
+                        </option>
                     </select>
                 </nav>
                 <div class="projects__cards">
 
                 </div>
                 <div class="projects__numbering">
-                    <button class="projects__arrow-button" id="projects__arrow-button_left" ></button>
+                    <button class="projects__arrow-button" id="projects__arrow-button_left"></button>
                     <div class="projects__container">
                         <p class="projects__numbers"><span class="projects__text-accent"></span></p>
                         <p class="projects__numbers">/</p>
-                        <p class="projects__numbers" id="projects__total-number-of-pages" >30</p>
+                        <p class="projects__numbers" id="projects__total-number-of-pages">30</p>
                     </div>
-                    <button class="projects__arrow-button projects__arrow-button_reverse" id="projects__arrow-button_right"></button>
+                    <button class="projects__arrow-button projects__arrow-button_reverse"
+                        id="projects__arrow-button_right"></button>
                 </div>
             </div>
-          
-          
+
+
         </section>
 
     </main>
@@ -182,23 +187,23 @@
 
                     <img class="logo" src="./images/header-logo.svg" alt="логотип ИТМО">
                     <!-- <ul class="header__nav-mobile"> -->
-                        <ul class="header__nav-mobile">
-                            <li><a class="header__link header__link_active" href="#">О нас</a></li>
-                            <li><a class="header__link" href="#">Лаборатория</a></li>
-                            <li><a class="header__link" href="#">Проекты</a></li>
-                            <li class="dropdown">
-                                <a class="header__link dropbtn"  href="#">Образование</a>
-                                <ul class="dropdown-content">
-                                    <li><a class="header__link" href="#">Магистратура</a></li>
-                                    <li><a class="header__link" href="#">Аспирантура</a></li>
-                                </ul>
-                            </li>
-                            <li><a class="header__link" href="#">Публикации</a></li>
-                            <li><a class="header__link" href="#">Команда</a></li>
-                            <li><a class="header__link" href="#">Связаться</a></li>
-                        </ul>
-                   
-                    
+                    <ul class="header__nav-mobile">
+                        <li><a class="header__link header__link_active" href="#">О нас</a></li>
+                        <li><a class="header__link" href="#">Лаборатория</a></li>
+                        <li><a class="header__link" href="#">Проекты</a></li>
+                        <li class="dropdown">
+                            <a class="header__link dropbtn" href="#">Образование</a>
+                            <ul class="dropdown-content">
+                                <li><a class="header__link" href="#">Магистратура</a></li>
+                                <li><a class="header__link" href="#">Аспирантура</a></li>
+                            </ul>
+                        </li>
+                        <li><a class="header__link" href="#">Публикации</a></li>
+                        <li><a class="header__link" href="#">Команда</a></li>
+                        <li><a class="header__link" href="#">Связаться</a></li>
+                    </ul>
+
+
 
                 </div>
             </div>
@@ -212,19 +217,20 @@
 
 
 
-<template class="projects__template">
-    <div class="projects__card">
-        <img src="images/projects__Gazprom.svg" alt="Логотип Газпрома" class="projects__logo" />
-        <p class="projects__description">Направление включает в себя исследования и разработки технологий МО и КТ.</p>
-        <button class="projects__button"></button>
-        <div class="projects__wrapper">
-            <p class="projects__text">Подробнее</p>
-            <a class="projects__link"><img class="projects__arrow-img"></a>
+    <template class="projects__template">
+        <div class="projects__card">
+            <img src="images/projects__Gazprom.svg" alt="Логотип Газпрома" class="projects__logo" />
+            <p class="projects__description">Направление включает в себя исследования и разработки технологий МО и КТ.
+            </p>
+            <button class="projects__button"></button>
+            <div class="projects__wrapper">
+                <p class="projects__text">Подробнее</p>
+                <a class="projects__link"><img class="projects__arrow-img"></a>
+            </div>
         </div>
-    </div>
-</template>
+    </template>
 
-<script type="module" src="./pages/index.js"></script>
+    <script type="module" src="./pages/index.js"></script>
 
 </body>
 
