@@ -1,0 +1,144 @@
+/* .footer__container {
+  border: 1px solid green;
+} */
+.footer__row {
+  display: flex;
+    align-items: stretch;
+    height: 100%;
+}
+.footer__col {
+  display: flex;
+  width: 25%;
+  font-size: 14px;
+  line-height: 19px;
+  flex-direction: column;
+  margin-top: 94px;
+}
+.footer__col:first-child {
+  margin-top: 0;
+}
+.footer__col-inner {
+  margin: 0 auto;
+}
+.footer__col:last-child .footer__col-inner{
+  max-width: 165px;
+  margin: 0 0 0 auto;
+}
+.footer__link {
+  text-decoration: none;
+  color: #fff;
+}
+.footer__done {
+  margin-top: 35px;
+  opacity: 0.5;
+}
+.footer__nav {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+.city {
+  font-size:  18px;
+  line-height: 20px;
+}
+
+.footer{
+  font-size: 14px;
+  line-height: 28px;
+}
+
+.flex-direction-column {
+  flex-direction: column;
+}
+
+
+  .footer__block-one {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 40px;
+
+   
+  }
+  .footer__block-one > *{
+    flex:1;
+  }
+  .footer_four-col {
+    display: flex;
+    align-items: flex-start;
+  }
+  .footer__block-one {
+    align-items: flex-start;
+  }
+  .footer__block-row {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+  }
+  .footer__block-row > *{
+    flex:1;
+  }
+
+  .footer__soc {
+    margin-left: auto;
+    display: flex;
+    max-width: 165px;
+  }
+
+  .footer__txt {
+    padding-right: 10px;
+  }
+
+  .footer__col-title {
+    font-weight: bold;
+    margin-bottom: 12px;
+  }
+
+@media screen and (max-width:768px) { 
+  .footer{
+    font-size: 12px;
+    line-height: 20px;
+  }
+
+  .container.footer__container {
+    margin: 0 15px;
+  }
+
+}
+
+@media screen and (max-width:600px) {
+
+
+
+  .footer__txt {
+    display: none;
+  }
+  .footer_four-col {
+    display: block;
+  }
+
+  .flex-direction-column {
+    flex-direction: row;
+  }
+
+  .footer__block-one {
+    align-items: center;
+}
+
+  .footer__col-title {
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+  .footer__link {
+    display: block;
+  }
+  .footer__done {
+    margin-top: 40px;
+    text-align: center;
+  }
+  .footer__block-row {
+      display: flex;
+      flex-direction: column-reverse;
+  }
+
+}
