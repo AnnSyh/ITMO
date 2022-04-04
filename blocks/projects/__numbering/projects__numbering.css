@@ -1,0 +1,20 @@
+.projects__numbering {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 44px;
+    margin-top: 12px;
+}
+
+@media screen and (max-width: 769px) {
+    .projects__numbering {
+        gap: 30px;
+        margin-top: 34px;
+    }
+}
+
+@media screen and (max-width: 321px) {
+    .projects__numbering {
+        margin-top: 14px;
+    }
+}

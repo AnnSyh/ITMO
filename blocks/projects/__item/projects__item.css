@@ -1,0 +1,17 @@
+.projects__item {
+    width: 100%;
+    max-width: 277px;
+    padding-bottom: 10px;
+}
+
+@media screen and (max-width: 912px) {
+    .projects__item {
+        max-width: 172px;
+    }
+}
+
+@media screen and (max-width: 769px) {
+    .projects__item {
+        padding-bottom: 8px;
+    }
+}

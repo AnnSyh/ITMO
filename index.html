@@ -2,12 +2,63 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <link rel="stylesheet" href="./pages/index.css">
     <title>Лаборатория ИТМО</title>
 </head>
 <body class="page">
+<div class="projects">
+    <h2 class="projects__title">Наши проекты</h2>
+    <nav class="projects__menu">
+        <ul class="projects__list">
+            <li class="projects__item projects__item_active">
+                <h3 class="projects__subtitle projects__subtitle_active" id="projects-all">Все проекты</h3>
+            </li>
+            <li class="projects__item">
+                <h3 class="projects__subtitle" id="projects-gos">Гос. проекты</h3>
+            </li>
+            <li class="projects__item">
+                <h3 class="projects__subtitle" id="projects-special">Спецпрограммы</h3>
+            </li>
+            <li class="projects__item">
+                <h3 class="projects__subtitle" id="projects-current">В разработке</h3>
+            </li>
+        </ul>
+        <select class="projects__submenu" >
+<!--            <option selected disabled hidden value="">People</option>-->
+            <option class="projects__subitem" value="Все проекты" id="projects-all-option">Все проекты</option>
+            <option class="projects__subitem" value="Гос. проекты" id="projects-gos-option">Гос. проекты</option>
+            <option class="projects__subitem" value="Спецпрограммы" id="projects-special-option">Спецпрограммы</option>
+            <option class="projects__subitem" value="В разработке" id="projects-current-option">В разработке</option>
+        </select>
+    </nav>
+    <div class="projects__cards">
 
-<script src="./pages/index.js"></script>
+    </div>
+    <div class="projects__numbering">
+        <button class="projects__arrow-button" id="projects__arrow-button_left" ></button>
+        <div class="projects__container">
+            <p class="projects__numbers"><span class="projects__text-accent"></span></p>
+            <p class="projects__numbers">/</p>
+            <p class="projects__numbers" id="projects__total-number-of-pages" >30</p>
+        </div>
+        <button class="projects__arrow-button projects__arrow-button_reverse" id="projects__arrow-button_right"></button>
+    </div>
+</div>
+
+
+<template class="projects__template">
+    <div class="projects__card">
+        <img src="images/projects__Gazprom.svg" alt="Логотип Газпрома" class="projects__logo" />
+        <p class="projects__description">Направление включает в себя исследования и разработки технологий МО и КТ.</p>
+        <button class="projects__button"></button>
+        <div class="projects__wrapper">
+            <p class="projects__text">Подробнее</p>
+            <a class="projects__link"><img class="projects__arrow-img"></a>
+        </div>
+    </div>
+</template>
+
+<script type="module" src="./pages/index.js"></script>
 </body>
 </html>

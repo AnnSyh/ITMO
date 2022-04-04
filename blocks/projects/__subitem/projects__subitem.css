@@ -1,0 +1,16 @@
+.projects__subitem {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 16px;
+    text-align: center;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    background: #001337;
+}
+
+@media screen and (max-width: 321px) {
+    .projects__subitem {
+        padding-left: 0;
+    }
+}
