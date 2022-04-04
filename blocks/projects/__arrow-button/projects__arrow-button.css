@@ -1,0 +1,20 @@
+.projects__arrow-button {
+    background: none;
+    background-image: url("../../../images/projects__arrow-down.svg");
+    width: 32px;
+    height: 32px;
+    border: none;
+}
+
+.projects__arrow-button:hover {
+    cursor: pointer;
+}
+
+@media screen and (max-width: 769px) {
+    .projects__arrow-button {
+        width: 24px;
+        height: 24px;
+        background-position: center;
+        background-size: cover;
+    }
+}

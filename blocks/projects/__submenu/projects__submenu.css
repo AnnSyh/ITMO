@@ -1,0 +1,35 @@
+.projects__submenu {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 16px;
+    text-align: left;
+    color: #FFFFFF;
+    background: none;
+    text-transform: uppercase;
+    border: none;
+    width: 288px;
+    height: 41px;
+    display: none;
+    text-align-last: left;
+    border-bottom: 2px solid #009FAC;
+}
+
+.projects__submenu:focus {
+    border: none;
+    outline: none;
+    border-bottom: 2px solid #009FAC;
+}
+
+@media screen and (max-width: 767px) {
+    .projects__submenu {
+        display: block;
+        width: 450px;
+    }
+}
+
+@media screen and (max-width: 511px) {
+    .projects__submenu {
+        width: 288px;
+    }
+}

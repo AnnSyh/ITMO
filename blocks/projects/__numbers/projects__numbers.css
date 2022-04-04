@@ -1,0 +1,24 @@
+.projects__numbers {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    /* identical to box height, or 167% */
+    letter-spacing: 0.1px;
+    color: #FFFFFF;
+    margin: 0;
+}
+
+@media screen and (max-width: 769px) {
+    .projects__numbers {
+        font-size: 14px;
+        line-height: 19px;
+    }
+}
+
+@media screen and (max-width: 321px) {
+    .projects__numbers {
+        font-size: 12px;
+        line-height: 20px;
+    }
+}

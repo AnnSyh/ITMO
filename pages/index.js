@@ -1,9 +1,10 @@
+
 "use strict";
 
 // import { FormValidator } from "../components/FormValidator.js";
 import { Popup } from "../components/Popup.js";
-
-// import "../pages/index.css";
+import projectsCards from "../utils/projectsCards.js";
+import ProjectsSlider from "./ProjectsSlider.js";
 
 const curentPopupConfirmation = document.querySelector(".confirmation__popup");
 const menuBtn = document.querySelector(".hamburger");
@@ -13,9 +14,6 @@ const subMenus = document.querySelectorAll(".sub-menu");
 const dropdownLi = document.querySelectorAll(".dropdown");
 const dropdownContent = document.querySelectorAll(".dropdown-content");
 
-
-
-
 dropdownLi.forEach(element => {
     element.addEventListener('click', (evt) => {
       const dropdownContentParent = evt.target.parentElement // ищем li именно этой ссылки
@@ -23,8 +21,6 @@ dropdownLi.forEach(element => {
       dropdownContentParent.classList.toggle("active");
     });
   });
-
-
 
 // -------------------- задаем попап------------------------
 // 1) попап с предупреждением
@@ -46,15 +42,14 @@ function closeConfirm(evt) {
 //подтверждение удаления
 function handleConfirmDelete() {
   popupConfirmation.openPopup(); //открываем окно подтверждения
-  console.log('handleConfirmDelete!!!!');
-
-}
-function handelMenu() {
-  console.log('handelMenu!!!!');
-
 }
 
 //вешаем событие на кнопки(открывющие попапы с формами)
 menuBtn.addEventListener("click", handleConfirmDelete);
 
-// menuBtn.addEventListener("click", handelMenu);
+const projectSlider = new ProjectsSlider(projectsCards);
+projectSlider.setEventListenersToProjectButtons();
+projectSlider.displayCards(projectsCards);
+projectSlider.setEventListenersToWindowAndDocument();
+projectSlider.setEventListenersToSelectProjectButtons();
+

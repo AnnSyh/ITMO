@@ -1,0 +1,40 @@
+.projects__card {
+    background-image: url("../../../images/projects__Factory.jpg");
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    width: 254px;
+    height: 228px;
+    padding: 20px;
+    position: relative;
+    box-sizing: border-box;
+}
+
+.projects__card:after {
+    content: '';
+    background: rgba(0, 159, 172, 0.8);
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    top: 0;
+    left: 0;
+    mix-blend-mode: multiply;
+}
+
+@media screen and (max-width: 912px) {
+    .projects__card {
+        width: 210px;
+        height: 199px;
+        padding: 16px;
+    }
+}
+
+@media screen and (max-width: 511px) {
+    .projects__card {
+        width: 140px;
+        height: 130px;
+        padding: 10px;
+    }
+}

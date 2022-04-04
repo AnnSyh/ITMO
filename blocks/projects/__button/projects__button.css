@@ -1,0 +1,37 @@
+.projects__button {
+    background-color: #FFFFFF;
+    background-image: url("../../../images/projects__arrow-right.svg");
+    background-size: 24px;
+    background-position: center;
+    background-repeat: no-repeat;
+    box-shadow: 0px 4px 20px rgba(1, 54, 157, 0.15);
+    border-radius: 36px;
+    width: 40px;
+    height: 40px;
+    border: none;
+    position: relative;
+    z-index: 3;
+    padding: 0;
+    margin-left: 174px;
+}
+
+.projects__button:hover {
+    cursor: pointer;
+}
+
+@media screen and (max-width: 912px) {
+    .projects__button {
+        width: 32px;
+        height: 32px;
+        margin-left: 146px;
+    }
+}
+
+@media screen and (max-width: 511px) {
+    .projects__button {
+        width: 20px;
+        height: 20px;
+        margin-left: 100px;
+        background-size: 12px;
+    }
+}
