@@ -1,0 +1,13 @@
+.popup__container {
+	display: flex;
+	overflow-y: auto;
+	align-items: center;
+    justify-content: center;
+    z-index: 101;
+    top: 8px;
+    left: 0;
+    right: 0;
+    cursor: pointer;
+	position: relative;
+    max-width: 400px;
+}
