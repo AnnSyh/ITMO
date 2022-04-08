@@ -1,0 +1,27 @@
+.heading {
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 68px;
+    text-align: center;
+    letter-spacing: 0.1px;
+    text-transform: uppercase;
+    margin: 0 auto 30px;
+}
+
+@media (max-width: 800px) {
+    .heading {
+        font-size: 24px;
+        line-height: 32.68px;
+    }
+}
+
+@media (max-width: 500px) {
+    .heading {
+        font-size: 16px;
+        line-height: 21.79px;
+        margin: 0 auto 20px;
+    }
+}

@@ -1,0 +1,33 @@
+.text {
+    font-family: 'Open Sans',sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    letter-spacing: 0.1px;
+    color: #FFFFFF;
+    margin: 0px 260px 30px;
+}
+
+@media (max-width: 1300px) {
+    .text {
+        font-size: 14px;
+        line-height: 20px;
+        margin: 0px 100px 30px;
+    }
+}
+@media (max-width: 800px) {
+    .text {
+        font-size: 14px;
+        line-height: 20px;
+        margin: 0px 39px 30px;
+    }
+}
+
+@media (max-width: 500px) {
+    .text {
+        font-size: 12px;
+        line-height: 16.34px;
+        margin: 0px 16px 30px;
+    }
+}

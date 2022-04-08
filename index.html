@@ -8,6 +8,51 @@
 </head>
 <body class="page">
 
+    <section class="partners">
+        <h2 class="partners__heading heading">с кем мы работаем</h2>
+        <p class="partners__text text">За время сотрудничества компания показала себя как надежный партнер, способный оперативно решать вопросы 
+            по внесению необходимых изменений.</p>
+        <p class="partners__text text">Отдельно хочется отметить квалифицированный персонал компании, который всегда готов прийти на помощь в решении поставленных задач, 
+            дать объективную оценку и свои рекомендации по улучшению деятельности.
+            Надеемся на дальнейшее и плодотворное сотрудничество.</p>
+
+        <ul class="partners__logo-grid">
+            <li class="partners__logo">
+                <img class="partners__img" src="./images/Gazprom.svg" alt="Логотип Газпрома">
+            </li>
+            <li class="partners__logo">
+                <img class="partners__img" src="./images/Sberbank_Logo_2020.svg" alt="Логотип Сбербанка">
+            </li>
+            <li class="partners__logo">
+                <img class="partners__img" src="./images/MailLogo.svg" alt="Логотип Mail.ru Gruop">
+            </li>
+            <li class="partners__logo">
+                <img class="partners__img" src="./images/Siemens-logo.svg" alt="Логотип Siemens">
+            </li>
+            <li class="partners__logo">
+                <img class="partners__img" src="./images/huawei-logo.svg" alt="Логотип Huawei">
+            </li>
+            <li class="partners__logo">
+                <img class="partners__img" src="./images/Rosveft.svg" alt="Логотип Роснефти">
+            </li>
+        </ul>
+    </section>
+    
+    <section class="in-touch">
+        <h2 class="in-touch__heading heading">всегда на связи</h2>
+        <p class="in-touch__text text">По всем интересующим вас вопросам вы всегда можете обратиться по указанным телефонам, написать на почту 
+            или оставтиь свое сообщение через форму обратной связи.</p>
+        <form class="in-touch__form">
+            <input class="in-touch__input input__name" type="text" minlength="2" maxlength="20" id="name" name="name" placeholder="Имя" value="Имя" required>
+            <input class="in-touch__input last-name" type="text" minlength="2" maxlength="40" id="lastname" name="lastname" placeholder="Фамилия" value="Фамилия" required>
+            <input class="in-touch__input input__text" type="textarea" minlength="5" maxlength="300" id="text" name="text" placeholder="Сообщение" value="Сообщение" required>
+            <input class="in-touch__input input__tel" type="tel" minlength="11" maxlength="15" id="tel" name="tel" placeholder="Телефон" value="Телефон" required>
+            <input class="in-touch__input input__email" type="email" id="email" name="email" placeholder="E-mail" value="E-mail" required>
+            <button class="in-touch__submit" type="submit">Отправить</button>
+        </form>
+    </section>
+    
+    
 <script src="./pages/index.js"></script>
 </body>
 </html>
