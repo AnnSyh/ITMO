@@ -1,58 +1,216 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="./pages/index.css">
+
+    <link rel="stylesheet" href="./vendor/likely/likely.css">
+
     <title>Лаборатория ИТМО</title>
 </head>
+
 <body class="page">
+    <!--  -->
+    <header class="header">
 
-    <section class="partners">
-        <h2 class="partners__heading heading">с кем мы работаем</h2>
-        <p class="partners__text text">За время сотрудничества компания показала себя как надежный партнер, способный оперативно решать вопросы 
-            по внесению необходимых изменений.</p>
-        <p class="partners__text text">Отдельно хочется отметить квалифицированный персонал компании, который всегда готов прийти на помощь в решении поставленных задач, 
-            дать объективную оценку и свои рекомендации по улучшению деятельности.
-            Надеемся на дальнейшее и плодотворное сотрудничество.</p>
+        <div class="hamburger">
+            <img class="logo" src="./images/burger-menu.svg" alt="бургер">
+        </div>
 
-        <ul class="partners__logo-grid">
-            <li class="partners__logo">
-                <img class="partners__img" src="./images/Gazprom.svg" alt="Логотип Газпрома">
-            </li>
-            <li class="partners__logo">
-                <img class="partners__img" src="./images/Sberbank_Logo_2020.svg" alt="Логотип Сбербанка">
-            </li>
-            <li class="partners__logo">
-                <img class="partners__img" src="./images/MailLogo.svg" alt="Логотип Mail.ru Gruop">
-            </li>
-            <li class="partners__logo">
-                <img class="partners__img" src="./images/Siemens-logo.svg" alt="Логотип Siemens">
-            </li>
-            <li class="partners__logo">
-                <img class="partners__img" src="./images/huawei-logo.svg" alt="Логотип Huawei">
-            </li>
-            <li class="partners__logo">
-                <img class="partners__img" src="./images/Rosveft.svg" alt="Логотип Роснефти">
-            </li>
-        </ul>
-    </section>
+    <div class="container header__container">
+                <img class="logo header__container__logo" src="./images/header-logo.svg" alt="логотип ИТМО">
+                <ul class="header__nav">
+                    <li><a class="header__link header__link_active" href="#">О нас</a></li>
+                    <li><a class="header__link" href="#">Лаборатория</a></li>
+                    <li><a class="header__link" href="#">Проекты</a></li>
+                    <li class="dropdown">
+                        <a class="header__link dropbtn"  href="#">Образование</a>
+                        <ul class="dropdown-content">
+                            <li><a class="header__link" href="#">Магистратура</a></li>
+                            <li><a class="header__link" href="#">Аспирантура</a></li>
+                        </ul>
+                    </li>
+                    <li><a class="header__link" href="#">Публикации</a></li>
+                    <li><a class="header__link" href="#">Команда</a></li>
+                    <li><a class="header__link" href="#">Связаться</a></li>
+                </ul>
+    </div>
+    </header>
+    <!--  -->
+    <main class="content">
+        <section class="">
+            
+        </section>
+        <section class="partners">
+            <h2 class="partners__heading heading">с кем мы работаем</h2>
+            <p class="partners__text text">За время сотрудничества компания показала себя как надежный партнер, способный оперативно решать вопросы 
+                по внесению необходимых изменений.</p>
+            <p class="partners__text text">Отдельно хочется отметить квалифицированный персонал компании, который всегда готов прийти на помощь в решении поставленных задач, 
+                дать объективную оценку и свои рекомендации по улучшению деятельности.
+                Надеемся на дальнейшее и плодотворное сотрудничество.</p>
     
-    <section class="in-touch">
-        <h2 class="in-touch__heading heading">всегда на связи</h2>
-        <p class="in-touch__text text">По всем интересующим вас вопросам вы всегда можете обратиться по указанным телефонам, написать на почту 
-            или оставтиь свое сообщение через форму обратной связи.</p>
-        <form class="in-touch__form">
-            <input class="in-touch__input input__name" type="text" minlength="2" maxlength="20" id="name" name="name" placeholder="Имя" value="Имя" required>
-            <input class="in-touch__input last-name" type="text" minlength="2" maxlength="40" id="lastname" name="lastname" placeholder="Фамилия" value="Фамилия" required>
-            <input class="in-touch__input input__text" type="textarea" minlength="5" maxlength="300" id="text" name="text" placeholder="Сообщение" value="Сообщение" required>
-            <input class="in-touch__input input__tel" type="tel" minlength="11" maxlength="15" id="tel" name="tel" placeholder="Телефон" value="Телефон" required>
-            <input class="in-touch__input input__email" type="email" id="email" name="email" placeholder="E-mail" value="E-mail" required>
-            <button class="in-touch__submit" type="submit">Отправить</button>
-        </form>
-    </section>
-    
-    
-<script src="./pages/index.js"></script>
+            <ul class="partners__logo-grid">
+                <li class="partners__logo">
+                    <img class="partners__img" src="./images/Gazprom.svg" alt="Логотип Газпрома">
+                </li>
+                <li class="partners__logo">
+                    <img class="partners__img" src="./images/Sberbank_Logo_2020.svg" alt="Логотип Сбербанка">
+                </li>
+                <li class="partners__logo">
+                    <img class="partners__img" src="./images/MailLogo.svg" alt="Логотип Mail.ru Gruop">
+                </li>
+                <li class="partners__logo">
+                    <img class="partners__img" src="./images/Siemens-logo.svg" alt="Логотип Siemens">
+                </li>
+                <li class="partners__logo">
+                    <img class="partners__img" src="./images/huawei-logo.svg" alt="Логотип Huawei">
+                </li>
+                <li class="partners__logo">
+                    <img class="partners__img" src="./images/Rosveft.svg" alt="Логотип Роснефти">
+                </li>
+            </ul>
+        </section>
+        
+        <section class="in-touch">
+            <h2 class="in-touch__heading heading">всегда на связи</h2>
+            <p class="in-touch__text text">По всем интересующим вас вопросам вы всегда можете обратиться по указанным телефонам, написать на почту 
+                или оставтиь свое сообщение через форму обратной связи.</p>
+            <form class="in-touch__form">
+                <input class="in-touch__input input__name" type="text" minlength="2" maxlength="20" id="name" name="name" placeholder="Имя" value="Имя" required>
+                <input class="in-touch__input last-name" type="text" minlength="2" maxlength="40" id="lastname" name="lastname" placeholder="Фамилия" value="Фамилия" required>
+                <input class="in-touch__input input__text" type="textarea" minlength="5" maxlength="300" id="text" name="text" placeholder="Сообщение" value="Сообщение" required>
+                <input class="in-touch__input input__tel" type="tel" minlength="11" maxlength="15" id="tel" name="tel" placeholder="Телефон" value="Телефон" required>
+                <input class="in-touch__input input__email" type="email" id="email" name="email" placeholder="E-mail" value="E-mail" required>
+                <button class="in-touch__submit" type="submit">Отправить</button>
+            </form>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container footer__container">
+
+            <div class="footer__block-one flex-direction-column">
+                <div class="footer__logo">
+                    <img class="logo " src="./images/header-logo.svg" alt="логотип ИТМО">
+                </div>
+                <div class="footer__copyright">
+                    Информация © 2020 Университет&nbsp;ИТМО
+                </div>
+            </div>
+
+            <div class="footer_four-col">
+
+                <div class="footer__block-one">
+
+                    <div class="footer__txt">
+                        Национальный центр когнитивных разработок – центр национальной технологической инициативы (НТИ),
+                        получивший государственную поддержку по направлению «Технологии машинного обучения и когнитивные
+                        технологии». Инфраструктурная основа взаимодействия научных, образовательных и промышленных
+                        организаций
+                    </div>
+
+                    <div class="footer__block-one">
+
+                        <div class="footer__col-inner">
+                            <div class="footer__col-title">О центре</div>
+                            <ul class="footer__nav">
+                                <li><a href="#" class="footer__link">О нас</a></li>
+                                <li><a href="#" class="footer__link">Главная</a></li>
+                                <li><a href="#" class="footer__link">Команда</a></li>
+                                <li><a href="#" class="footer__link">Лаборатория</a></li>
+                                <li><a href="#" class="footer__link">Контакты</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="footer__col-inner">
+                            <div class="footer__col-title">Развитие</div>
+                            <ul class="footer__nav">
+                                <li><a class="footer__link" href="#">Образование</a></li>
+                                <li><a class="footer__link" href="#">Аспирантура</a></li>
+                                <li><a class="footer__link" href="#">Магистратура</a></li>
+                                <li><a class="footer__link" href="#">Публикации</a></li>
+                                <li><a class="footer__link" href="#">Проекты</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footer__col-inner">
+                    <div class="footer__col-title city">г.Санкт-Петербург</div>
+                    <div class="footer__address">
+                        199034, Санкт-Петербург,
+                        Биржевая&nbsp;линия,&nbsp;д.&nbsp;4,&nbsp;лит.&nbsp;М,&nbsp;ауд.&nbsp;302С
+                    </div>
+                    <div class="footer__tel">
+                        <a class="footer__link" href="tel:78123376490">+7 (812) 337-64-90</a>
+                        <a class="footer__link" href="tel:78123376494">+7 (812) 337-64-94</a>
+                    </div>
+                    <div class="footer__mail">
+                        <a class="footer__link" href="mailto: anna.lutsenko@itmo.ru">anna.lutsenko@itmo.ru</a>
+                    </div>
+
+
+                </div>
+            </div>
+
+            <div class="footer__block-row">
+                <div class="footer__done">
+                    Сделано студентами Яндекс. Практикума
+                </div>
+                <div class="footer__soc likely">
+                    <div class="vkontakte"></div>
+                    <div class="facebook"></div>
+                    <div class="telegram"></div>
+                    <div class="twitter"></div>
+                    <div class="linkedin"></div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+    <div class="confirmation">
+        <div class="popup confirmation__popup">
+            <div class="popup__overlay"></div>
+            <div class="popup__container">
+                <!-- <div class="form-place"></div> -->
+                <div class="popup__content">
+                    <button class="popup__close popup__close_add-plaсe" type="button"></button>
+
+                    <img class="logo" src="./images/header-logo.svg" alt="логотип ИТМО">
+                    <!-- <ul class="header__nav-mobile"> -->
+                        <ul class="header__nav-mobile">
+                            <li><a class="header__link header__link_active" href="#">О нас</a></li>
+                            <li><a class="header__link" href="#">Лаборатория</a></li>
+                            <li><a class="header__link" href="#">Проекты</a></li>
+                            <li class="dropdown">
+                                <a class="header__link dropbtn"  href="#">Образование</a>
+                                <ul class="dropdown-content">
+                                    <li><a class="header__link" href="#">Магистратура</a></li>
+                                    <li><a class="header__link" href="#">Аспирантура</a></li>
+                                </ul>
+                            </li>
+                            <li><a class="header__link" href="#">Публикации</a></li>
+                            <li><a class="header__link" href="#">Команда</a></li>
+                            <li><a class="header__link" href="#">Связаться</a></li>
+                        </ul>
+                   
+                    
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script type="module" src="./pages/index.js"></script>
+    <!-- <script type="module" src="./vendor/likely/likely.js"></script> -->
+
+>>>>>>> 3841e6c3ea3f2cbfabbeb0864dbebb0a48865f77
 </body>
+
 </html>

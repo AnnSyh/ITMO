@@ -1,0 +1,11 @@
+
+.hamburger { 
+	display: flex;
+	cursor: pointer;
+}
+
+@media screen and (min-width:868px) {
+	.hamburger {
+		display: none;
+	}
+}
