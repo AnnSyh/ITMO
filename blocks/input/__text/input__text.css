@@ -1,0 +1,23 @@
+.input__text {
+    grid-area: text;
+    padding: 19px 24px 98px 20px;
+
+}
+
+@media (max-width: 800px) {
+    .input__text {
+        padding: 11px 12px 74px;
+    }
+}
+
+@media (max-width: 650px) {
+    .input__text {
+        padding: 11px 10px;
+    }
+}
+
+@media (max-width: 400px) {
+    .input__text {
+        padding: 11px 10px 67px;
+    }
+}

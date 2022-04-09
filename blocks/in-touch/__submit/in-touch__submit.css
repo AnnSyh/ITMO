@@ -1,0 +1,36 @@
+.in-touch__submit {
+    grid-area: submit;
+    border-radius: 10px;
+    background-color: #009FAC;
+    color: #fff;
+    font-family: 'Open Sans';
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    letter-spacing: 0.1px;
+    border-color: #fff;
+    margin-top: 17px;
+    margin-bottom: -17px;
+}
+
+@media (max-width: 767px) {
+    .in-touch__submit {
+        font-size: 14px;
+        line-height: 19.07px;
+        min-width: 180px;
+    }
+}
+
+@media (max-width: 650px) {
+    .in-touch__submit {
+        justify-self: center;
+        margin-top: 25px;
+        margin-bottom: -25px;    }
+}
+
+@media (max-width: 400px) {
+    .in-touch__submit {
+        margin-top: 11px;
+        margin-bottom: -11px;    }
+}

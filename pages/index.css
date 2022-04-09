@@ -18,6 +18,22 @@
 @import url(../blocks/header/__link/_active/header__link_active.css);
 @import url(../blocks/header/__nav-mobile/header__nav-mobile.css);
 
+@import url(../blocks/partners/partners.css);
+@import url(../blocks/heading/heading.css);
+@import url(../blocks/partners/__logo-grid/partners__logo-grid.css);
+@import url(../blocks/partners/__logo/partners__logo.css);
+@import url(../blocks/text/text.css);
+@import url(../blocks/partners/__img/partners__img.css);
+@import url(../blocks/in-touch/in-touch.css);
+@import url(../blocks/in-touch/__form/in-touch__form.css);
+@import url(../blocks/in-touch/__input/in-touch__input.css);
+@import url(../blocks/input/__name/input__name.css);
+@import url(../blocks/input/__email/input__email.css);
+@import url(../blocks/input/__last-name/input__last-name.css);
+@import url(../blocks/input/__tel/input__tel.css);
+@import url(../blocks/input/__text/input__text.css);
+@import url(../blocks/in-touch/__submit/in-touch__submit.css);
+
 @import url(../blocks/footer/footer.css);
 @import url(../blocks/footer/__container/footer__container.css);
 
