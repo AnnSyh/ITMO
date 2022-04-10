@@ -1,0 +1,51 @@
+.education__item {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    /* or 167% */
+    letter-spacing: 0.1px;
+    color: #000D26;
+}
+
+@media screen and (max-width: 1231px) {
+    .education__item {
+        font-size: 16px;
+        line-height: 167%;
+    }
+}
+
+@media screen and (max-width: 1110px) {
+    .education__item {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 870px) {
+    .education__item {
+        font-size: 12px;
+        line-height: 16px;
+        letter-spacing: 0.0588372px;
+        margin-bottom: 4px;
+    }
+}
+
+@media screen and (max-width: 670px) {
+    .education__item {
+        font-size: 16px;
+        line-height: 167%;
+    }
+}
+
+@media screen and (max-width: 605px) {
+    .education__item {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .education__item {
+        font-size: 12px;
+        line-height: 16px;
+    }
+}

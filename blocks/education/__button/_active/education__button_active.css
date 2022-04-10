@@ -1,0 +1,23 @@
+.education__button_active {
+    background: #E0F0FF;
+    color: #000D26;
+    font-weight: 600;
+    width: 279px;
+}
+
+.education__button_active:hover {
+    cursor: unset;
+}
+
+@media screen and (max-width: 825px) {
+    .education__button_active {
+        width: 232px;
+    }
+}
+
+@media screen and (max-width: 540px) {
+    .education__button_active {
+        width: 149px;
+        height: 40px;
+    }
+}

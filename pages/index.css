@@ -40,6 +40,7 @@
 @import url(../blocks/popup/__title/popup__title.css);
 @import url(../blocks/popup/_opened/popup_opened.css);
 
+@import url(../blocks/content/content.css);
 
 @import url(../blocks/projects/projects.css);
 @import url(../blocks/projects/__title/projects__title.css);
@@ -64,3 +65,21 @@
 @import url(../blocks/projects/__subitem/projects__subitem.css);
 @import url(../blocks/projects/__submenu/projects__submenu.css);
 
+@import url(../blocks/content/content.css);
+
+@import url(../blocks/education/education.css);
+@import url(../blocks/education/__title/education__title.css);
+@import url(../blocks/education/__text/education__text.css);
+@import url(../blocks/education/__card/education__card.css);
+@import url(../blocks/education/__card/_visible/education__card_visible.css);
+@import url(../blocks/education/__text-container/education__text-container.css);
+@import url(../blocks/education/__subtitle/education__subtitle.css);
+@import url(../blocks/education/__item/education__item.css);
+@import url(../blocks/education/__image/education__image.css);
+@import url(../blocks/education/__link/education__link.css);
+@import url(../blocks/education/__link-text/education__link-text.css);
+@import url(../blocks/education/__arrow/education__arrow.css);
+@import url(../blocks/education/__list/education__list.css);
+@import url(../blocks/education/__button/education__button.css);
+@import url(../blocks/education/__button/_active/education__button_active.css);
+@import url(../blocks/education/__container/education__container.css);

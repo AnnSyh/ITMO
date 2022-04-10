@@ -1,0 +1,9 @@
+.education__arrow {
+    width: 24px;
+    height: 24px;
+    align-self: end;
+}
+
+.education__arrow:hover {
+    cursor: auto;
+}

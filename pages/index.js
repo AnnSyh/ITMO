@@ -5,6 +5,7 @@
 import { Popup } from "../components/Popup.js";
 import projectsCards from "../utils/projectsCards.js";
 import ProjectsSlider from "./ProjectsSlider.js";
+import EducationSwitch from "./EducationSwitch.js";
 
 const curentPopupConfirmation = document.querySelector(".confirmation__popup");
 const menuBtn = document.querySelector(".hamburger");
@@ -52,4 +53,7 @@ projectSlider.setEventListenersToProjectButtons();
 projectSlider.displayCards(projectsCards);
 projectSlider.setEventListenersToWindowAndDocument();
 projectSlider.setEventListenersToSelectProjectButtons();
+
+const educationSwitch = new EducationSwitch();
+educationSwitch.setEventListeners();
 
