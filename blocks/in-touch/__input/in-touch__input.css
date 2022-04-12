@@ -1,0 +1,30 @@
+.in-touch__input {
+background: #FFFFFF;
+border: 0 solid #FFFFFF;
+border-radius: 5px;
+font-family: 'Open Sans', sans-serif;
+font-size: 18px;
+line-height: 20px;
+letter-spacing: 0.1px;
+color: #009FAC;
+font-style: normal;
+font-weight: 400;
+padding: 19px 24px 19px 20px;
+}
+
+@media (max-width: 1000px) {
+    .in-touch__input {
+        font-size: 14px;
+        line-height: 20px;
+        padding: 11px 12px;
+    }
+}
+
+@media (max-width: 767px) {
+    .in-touch__input {
+        font-size: 12px;
+        line-height: 16.34px;
+        padding: 11px 10px;
+    }
+}
+

@@ -1,0 +1,19 @@
+.partners__img {
+    object-fit: contain;
+    height: 48px;
+    width: 219px;
+}
+
+@media (max-width: 1199px) {
+    .partners__img {
+        height: 32px;
+        max-width: 194px;
+    }
+}
+
+@media (max-width: 767px) {
+    .partners__img {
+        height: 20px;
+        max-width: 148px;
+    }
+}
