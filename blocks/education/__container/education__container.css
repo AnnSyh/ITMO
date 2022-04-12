@@ -1,0 +1,27 @@
+.education__container {
+    width: 542px;
+    height: 60px;
+    background: #009FAC;
+    border: 1px solid #E0F0FF;
+    box-sizing: border-box;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+@media screen and (max-width: 825px) {
+    .education__container {
+        width: 450px;
+        height: 44px;
+    }
+}
+
+@media screen and (max-width: 540px) {
+    .education__container {
+        width: 288px;
+        height: 40px;
+        border-radius: 5px;
+    }
+}
