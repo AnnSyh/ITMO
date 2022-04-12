@@ -1,0 +1,11 @@
+@media screen and (max-width: 870px) {
+    .education__text-container {
+        align-self: start;
+    }
+}
+
+@media screen and (max-width: 670px) {
+    .education__text-container {
+        align-self: unset;
+    }
+}
