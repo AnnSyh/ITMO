@@ -43,6 +43,7 @@
 @import url(../blocks/popup/__overlay/popup__overlay.css);
 @import url(../blocks/popup/__container/popup__container.css);
 @import url(../blocks/popup/__content/popup__content.css);
+@import url(../blocks/popup/__content-inner/popup__content-inner.css);
 @import url(../blocks/popup/__body/popup__body.css);
 @import url(../blocks/popup/__figure/popup__figure.css);
 @import url(../blocks/popup/__img/popup__img.css);
@@ -55,4 +56,35 @@
 @import url(../blocks/popup/__btn/popup__btn.css);
 @import url(../blocks/popup/__title/popup__title.css);
 @import url(../blocks/popup/_opened/popup_opened.css);
->>>>>>> 3841e6c3ea3f2cbfabbeb0864dbebb0a48865f77
+
+
+
+@import url(../blocks/projects/projects.css);
+@import url(../blocks/projects/__title/projects__title.css);
+@import url(../blocks/projects/__subtitle/projects__subtitle.css);
+@import url(../blocks/projects/__subtitle/_active/projects__subtitle_active.css);
+@import url(../blocks/projects/__item/projects__item.css);
+@import url(../blocks/projects/__item/_active/projects__item_active.css);
+@import url(../blocks/projects/__menu/projects__menu.css);
+@import url(../blocks/projects/__list/projects__list.css);
+@import url(../blocks/projects/__card/projects__card.css);
+@import url(../blocks/projects/__logo/projects__logo.css);
+@import url(../blocks/projects/__description/projects__description.css);
+@import url(../blocks/projects/__button/projects__button.css);
+@import url(../blocks/projects/__text/projects__text.css);
+@import url(../blocks/projects/__arrow-button/projects__arrow-button.css);
+@import url(../blocks/projects/__arrow-button/_reverse/projects__arrow-button_reverse.css);
+@import url(../blocks/projects/__container/projects__container.css);
+@import url(../blocks/projects/__numbers/projects__numbers.css);
+@import url(../blocks/projects/__text-accent/projects__text-accent.css);
+@import url(../blocks/projects/__numbering/projects__numbering.css);
+@import url(../blocks/projects/__cards/projects__cards.css);
+@import url(../blocks/projects/__subitem/projects__subitem.css);
+@import url(../blocks/projects/__submenu/projects__submenu.css);
+
+@import url(../blocks/btn/btn.css);
+
+@import url(../blocks/lab/lab.css);
+@import url(../blocks/lab/__card/lab__card.css);
+@import url(../blocks/lab/__card-btn/lab__card-btn.css);
+
