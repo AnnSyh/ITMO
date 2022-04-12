@@ -15,3 +15,7 @@
     /* left: -200px;
     transition: left .2s; */
 }
+
+.industrialLab__popup {
+    justify-content: center;
+}

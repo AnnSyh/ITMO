@@ -1,7 +1,6 @@
 
 
 .lab {
-  border: 1px solid red;
   display: flex;
   flex-direction: column;
   background: #E0F0FF;
@@ -54,6 +53,7 @@
 .lab__cards {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
 
 }
 
@@ -75,45 +75,4 @@
   margin-right: 18px;
 }
 
-.lab__card-title{
-  font-family: 'Open Sans';
-  font-style: normal;
-  font-weight: 600;
-  font-size: 18px;
-  line-height: 30px;
-  text-align: center;
-  color: #001337;
-}
-.lab__card {
-  border-radius: 10px;
-  background-color: #fff;
-  padding: 30px 20px;
-  display: flex;
-  flex-direction: column;
-  margin: 0 15px;
-  align-items: center;
-  height: 430px;
-  justify-content: space-evenly;
-}
 
-.lab__card-icon {
-  background: #FFFFFF;
-  box-shadow: 0px 4px 20px rgb(1 54 157 / 15%);
-  border-radius: 36px;
-  width: 70px;
-  height: 70px;
-  position: relative;
-}
-  .lab__card-icon img{
-    position: absolute;
-      top: calc(50% - 17px);
-      left: calc(50% - 17px);
-  }
-
-  .lab__card-text {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 20px;
-    text-align: center;
-    letter-spacing: 0.1px;
-  }
