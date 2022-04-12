@@ -2,7 +2,9 @@
     background-color: #001337;
     padding-top: 385px;
     padding-bottom: 80px;
+
     max-width: 1440px;
+
 }
 
 @media (max-width: 1199px) {

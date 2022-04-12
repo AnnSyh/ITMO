@@ -1,7 +1,6 @@
 .popup__content {
 	display: flex;
     flex-direction: column;
-    background-color: #000D26;
     position: relative;
     box-sizing: border-box;
 
@@ -9,13 +8,27 @@
     height: 100vh;
 }
 
-.popup__content .logo {
-  width: 150px;
-    height: 54px;
+
+.confirmation .popup__content {
+    background-color: #000D26;
+}
+.confirmation .popup__content .logo {
+    width: 150px;
+      height: 54px;
+  }
+
+
+.industrialLab .popup__content {
+    background-color: #ffffff;
+    height: auto;
+    padding: 40px 20px;
+    color: #000D26;
+    border-radius: 30px;
 }
 
+
 @media screen and (min-width:480px){
-    .popup__content {
+    .confirmation .popup__content {
         padding: 0;
     }
     

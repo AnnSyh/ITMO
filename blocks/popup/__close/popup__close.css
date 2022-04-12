@@ -24,6 +24,14 @@
     top: 45%;
     right: 0;
 }
+
+.industrialLab .popup__close::after,
+.industrialLab .popup__close::before {
+    background: #000000;
+}
+
+
+
 .popup__close::after {
     transform: rotate(45deg);
 }

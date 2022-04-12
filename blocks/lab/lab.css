@@ -1,0 +1,78 @@
+
+
+.lab {
+  display: flex;
+  flex-direction: column;
+  background: #E0F0FF;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  color: #000D26;
+}
+
+.lab__wrapper {
+  margin-bottom: 80px;
+}
+
+.lab__title{
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 68px;
+  text-align: center;
+  letter-spacing: 0.1px;
+  text-transform: uppercase;
+  margin-bottom: 60px;
+}
+
+.lab__lid {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  margin-bottom: 20px;
+}
+.lab__text {
+  position: relative;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 26px;
+  letter-spacing: 0.1px;
+}
+.lab__text::after {
+  content: '';
+  width: 24px;
+  height: 24px;
+  background-image: url(../../images/Lab/text-icon.svg);
+  background-position: center;
+  background-size: contain;
+  position: absolute;
+  top: 0;
+  left: -30px;
+}
+
+.lab__cards {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+}
+
+.lab__info {
+  margin-right: 30px;
+}
+
+.lab__wrapper,
+.lab__imgs {
+  display: flex;
+}
+
+.lab__imgs img {
+  max-width: 264px;
+  max-height: 276px;
+}
+
+.lab__imgs img:first-child {
+  margin-right: 18px;
+}
+
+
