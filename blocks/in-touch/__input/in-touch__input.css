@@ -12,6 +12,26 @@ font-weight: 400;
 padding: 19px 24px 19px 20px;
 }
 
+.in-touch__input::-webkit-input-placeholder {
+    color: #009FAC;
+}
+
+.in-touch__input::-moz-placeholder {
+    color: #009FAC;
+}
+
+.in-touch__input:-moz-placeholder {
+    color: #009FAC;
+}
+
+.in-touch__input:-ms-input-placeholder {
+    color: #009FAC;
+}
+
+.in-touch__input::placeholder {
+    color: #009FAC;
+}
+
 @media (max-width: 1000px) {
     .in-touch__input {
         font-size: 14px;
