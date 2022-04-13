@@ -18,6 +18,12 @@
 @import url(../blocks/header/__link/_active/header__link_active.css);
 @import url(../blocks/header/__nav-mobile/header__nav-mobile.css);
 
+@import url(../blocks/cognitive/cognitive.css);
+@import url(../blocks/cognitive/__column/cognitive__column.css);
+@import url(../blocks/cognitive/__heading/cognitive__heading.css);
+@import url(../blocks/cognitive/__text/cognitive__text.css);
+@import url(../blocks/cognitive/__button/cognitive__button.css);
+
 @import url(../blocks/partners/partners.css);
 @import url(../blocks/heading/heading.css);
 @import url(../blocks/partners/__logo-grid/partners__logo-grid.css);
