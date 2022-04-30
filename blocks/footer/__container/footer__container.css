@@ -142,3 +142,9 @@
   }
 
 }
+
+@media screen and (max-width:767px) {
+  .footer__block-row {
+    align-items: center;
+  }
+}

@@ -10,34 +10,61 @@
   max-width: 250px;
   width: calc(100%/4 - 3*20px);
   justify-content: space-between;
+
+  position: relative;
+  transition: bottom 1s ease-out;
+  bottom: 0px;
+}
+
+.lab__card:nth-child(1) {
+  /* background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%); */
+  background-image: url(../../../images/Lab/Project.png);
+  background-size: contain;
+}
+
+.lab__card:nth-child(2) {
+  background-image: url(../../../images/Lab/Machine-learning.png);
+  background-size: contain;
 }
 
 .lab__card:nth-child(3) {
-  /* background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%); */
   background-image: url(../../../images/Lab/Data.png);
   background-size: contain;
+}
 
+.lab__card:nth-child(4) {
+  background-image: url(../../../images/Lab/Robot.png);
+  background-size: contain;
 }
-.lab__card-title{
-  font-family: 'Open Sans';
-  font-style: normal;
-  font-weight: 600;
-  font-size: 18px;
-  line-height: 30px;
-  text-align: center;
-  color: #001337;
+
+@media screen and (max-width: 480px) {
+  .lab__card:nth-child(1),
+  .lab__card:nth-child(2),
+  .lab__card:nth-child(3),
+  .lab__card:nth-child(4) {
+    background-image: none;
+  }
 }
+
+.lab__card:hover,
 .lab__card-active {
   background-color: #009FAC;
   color: #ffffff;
+  cursor: pointer;
+  bottom: 20px;
+
 }
-  .lab__card-active .btn {
-    color: #ffffff;
-    border-color: #ffffff;
-  }
-  .lab__card-active .lab__card-title {
-    color: #ffffff;
-  }
+
+.lab__card:hover .btn,
+.lab__card-active .btn {
+  color: #ffffff;
+  border-color: #ffffff;
+}
+
+.lab__card:hover .lab__card-title,
+.lab__card-active .lab__card-title {
+  color: #ffffff;
+}
 
 .lab__card-icon {
   background: #FFFFFF;
@@ -47,78 +74,74 @@
   height: 70px;
   position: relative;
 }
-  .lab__card-icon img{
-    position: absolute;
-      top: calc(50% - 17px);
-      left: calc(50% - 17px);
+
+.lab__card-icon img {
+  position: absolute;
+  top: calc(50% - 17px);
+  left: calc(50% - 17px);
+  width: 35px;
+}
+
+
+@media screen and (max-width:768px) {
+  .lab__card {
+    height: 290px;
   }
 
-  .lab__card-text {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 20px;
-    text-align: center;
-    letter-spacing: 0.1px;
+  .lab__card-icon {
+    width: 41px;
+    height: 41px;
   }
 
-  @media screen and (max-width:768px) {
-    .lab__card {
-      height: 242px;
-    }
-    .lab__card-title{
-      font-size: 12px;
-      line-height: 16px;
-    }
-    .lab__card-icon{
-      width: 41px;
-      height: 41px;
-    }
-    .lab__card-text{
-      font-size: 10px;
-      line-height: 13px;
-    }
-    .lab__card-btn{}
+}
+
+@media screen and (max-width:660px) {
+  .lab__wrapper {
+    flex-direction: column-reverse;
+    align-items: center;
   }
 
-  @media screen and (max-width:660px) {
-    .lab__wrapper {
-      flex-direction: column-reverse;
-      align-items: center;
-    }
-    .lab__cards {
-      flex-wrap: wrap;
-    }
-    .lab__imgs img {
-      max-width: 100%;
-      margin-bottom: 20px;
-      width: 100%;
-    }
-    .lab__card {
-        padding: 20px 10px;
-        width: calc(100%/2 - 3*10px);
-        margin-bottom: 20px;
-    }
-    .lab__info {
-        margin-right: 0;
-    }
+  .lab__cards {
+    flex-wrap: wrap;
   }
-  @media screen and (max-width:990px) {
-    .lab__text::after {
-      content: none;
-    }
+
+  .lab__imgs img {
+    max-width: 100%;
+    margin-bottom: 20px;
+    width: 100%;
   }
-  @media screen and (max-width:1220px) {
-    .lab__wrapper,
-    .lab__cards
-     {
-        margin: 0 39px;
-    }
-    .lab__wrapper {
-      margin-bottom: 20px; 
-    }
+
+  .lab__card {
+    padding: 20px 10px;
+    width: calc(100%/2 - 3*10px);
+    margin-bottom: 20px;
   }
-  @media screen and (max-width:1439px) {
-    .lab__imgs img:first-child {
-      display: none;
-    }
+
+  .lab__info {
+    margin-right: 0;
   }
+}
+
+@media screen and (max-width:990px) {
+  .lab__text::after {
+    content: none;
+  }
+}
+
+@media screen and (max-width:1220px) {
+
+  .lab__wrapper,
+  .lab__cards {
+    margin: 0 20px;
+  }
+
+  .lab__wrapper {
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width:1439px) {
+  .lab__imgs img:first-child {
+    display: none;
+  }
+}

@@ -1,0 +1,31 @@
+.lab__text {
+  position: relative;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.1px;
+}
+.lab__text::after {
+  content: '';
+  width: 24px;
+  height: 24px;
+  background-image: url(../../../images/Lab/text-icon.svg);
+  background-position: center;
+  background-size: contain;
+  position: absolute;
+  top: 0;
+  left: -30px;
+}
+
+@media screen and (min-width: 480px) {
+  .lab__text {
+    font-size: 14px;
+    line-height: 20px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .lab__text {
+    font-size: 18px;
+    line-height: 30px;
+  }
+}

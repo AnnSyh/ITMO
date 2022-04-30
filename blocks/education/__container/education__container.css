@@ -25,3 +25,9 @@
         border-radius: 5px;
     }
 }
+
+@media screen and (max-width: 480px) {
+    .education__container {
+        width: 270px;
+    }
+}

@@ -1,53 +1,31 @@
-
-
 .lab {
   display: flex;
   flex-direction: column;
   background: #E0F0FF;
-  padding-top: 80px;
-  padding-bottom: 80px;
+  /* padding-top: 80px;
+  padding-bottom: 80px; */
+  padding-top: 40px;
+  padding-bottom: 40px;
   color: #000D26;
 }
 
+@media screen and (min-width: 480px) {
+  .lab {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .lab {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+}
+
+
+
 .lab__wrapper {
   margin-bottom: 80px;
-}
-
-.lab__title{
-  font-family: 'Open Sans';
-  font-style: normal;
-  font-weight: 600;
-  font-size: 36px;
-  line-height: 68px;
-  text-align: center;
-  letter-spacing: 0.1px;
-  text-transform: uppercase;
-  margin-bottom: 60px;
-}
-
-.lab__lid {
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 30px;
-  margin-bottom: 20px;
-}
-.lab__text {
-  position: relative;
-  font-weight: 300;
-  font-size: 18px;
-  line-height: 26px;
-  letter-spacing: 0.1px;
-}
-.lab__text::after {
-  content: '';
-  width: 24px;
-  height: 24px;
-  background-image: url(../../images/Lab/text-icon.svg);
-  background-position: center;
-  background-size: contain;
-  position: absolute;
-  top: 0;
-  left: -30px;
 }
 
 .lab__cards {
