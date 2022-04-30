@@ -1,0 +1,47 @@
+.education__link-text {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 30px;
+    /* identical to box height, or 167% */
+    text-align: center;
+    color: #000D26;
+    margin: 0;
+}
+
+.education__link-text:hover {
+    text-decoration-line: underline;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1231px) {
+    .education__link-text {
+        font-size: 16px;
+        line-height: 167%;
+    }
+}
+
+@media screen and (max-width: 1110px) {
+    .education__link-text {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 670px) {
+    .education__link-text {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 605px) {
+    .education__link-text {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .education__link-text {
+        font-size: 12px;
+        line-height: 16px;
+    }
+}
