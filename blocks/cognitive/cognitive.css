@@ -1,0 +1,15 @@
+.cognitive {
+    background-image: url(../../images/Background\ _cognitive.png);
+    background-position: center;
+    max-width: 1440px;
+    margin: 0;
+    padding: 0;
+}
+
+@media (max-width: 1100px) {
+    .cognitive {
+        background-image: url(../../images/Background_cognitive-mirror.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+}
