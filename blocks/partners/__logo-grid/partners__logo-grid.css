@@ -25,3 +25,9 @@
         grid-template-columns: repeat(2, 1fr);
     }
 }
+
+@media (max-width: 330px) {
+    .partners__logo-grid {
+        margin: 0;
+    }
+}

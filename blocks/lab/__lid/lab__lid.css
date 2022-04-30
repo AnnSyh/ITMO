@@ -1,0 +1,17 @@
+.lab__lid {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 30px;
+  margin-bottom: 20px;
+}
+
+@media screen and (min-width: 480px) {
+  .lab__lid {
+    font-size: 14px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .lab__lid {
+    font-size: 18px;
+  }
+}

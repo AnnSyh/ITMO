@@ -35,3 +35,9 @@
         background-size: 12px;
     }
 }
+
+@media screen and (max-width: 340px) {
+    .projects__button {
+        margin-left: 90px;
+    }
+}
