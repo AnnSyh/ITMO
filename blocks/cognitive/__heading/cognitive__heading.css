@@ -1,0 +1,29 @@
+.cognitive__heading {
+    font-family: Open Sans, sans-serif;
+    font-size: 54px;
+    font-weight: 700;
+    line-height: 68px;
+    letter-spacing: 0.1px;
+    text-align: left;
+    padding-top: 92px;
+    margin-top: 0;
+    max-width: 445px;
+}
+
+.cognitive__heading_light {
+    font-weight: 400;
+    margin-bottom: 12px;
+}
+
+@media (max-width: 500px) {
+    .cognitive__heading {
+        font-size: 32px;
+        line-height: 44px;
+        max-width: 256px;
+    }
+        
+    .cognitive__heading_light {
+        font-weight: 400;
+        margin-bottom: 16px;
+    }
+}
