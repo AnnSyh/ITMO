@@ -2,7 +2,7 @@
   position: relative;
   font-weight: 300;
   font-size: 12px;
-  line-height: 26px;
+  line-height: 16px;
   letter-spacing: 0.1px;
 }
 .lab__text::after {
@@ -20,10 +20,12 @@
 @media screen and (min-width: 480px) {
   .lab__text {
     font-size: 14px;
+    line-height: 20px;
   }
 }
 @media screen and (min-width: 768px) {
   .lab__text {
     font-size: 18px;
+    line-height: 30px;
   }
 }

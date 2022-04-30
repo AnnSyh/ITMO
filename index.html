@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="ru" class="scroll-container">
 
 <head>
     <meta charset="UTF-8">
@@ -23,26 +23,27 @@
         <div class="container header__container">
             <img class="logo header__container__logo" src="./images/header-logo.svg" alt="логотип ИТМО">
             <ul class="header__nav">
-                <li><a class="header__link header__link_active" href="#">О нас</a></li>
+                <li><a class="header__link header__link_active" href="#partners">О нас</a></li>
                 <li><a class="header__link" href="#lab">Лаборатория</a></li>
                 <li><a class="header__link" href="#projects">Проекты</a></li>
                 <li class="dropdown">
-                    <a class="header__link dropbtn" href="#">Образование</a>
+                    <a class="header__link dropbtn" href="#education">Образование</a>
                     <ul class="dropdown-content">
-                        <li><a class="header__link" href="#">Магистратура</a></li>
-                        <li><a class="header__link" href="#">Аспирантура</a></li>
+                        <li><a class="header__link" href="#education">Магистратура</a></li>
+                        <li><a class="header__link" href="#education">Аспирантура</a></li>
                     </ul>
                 </li>
-                <li><a class="header__link" href="#">Публикации</a></li>
-                <li><a class="header__link" href="#">Команда</a></li>
-                <li><a class="header__link" href="#">Связаться</a></li>
+                <!-- <li><a class="header__link" href="#">Публикации</a></li> -->
+                <!-- <li><a class="header__link" href="#">Команда</a></li> -->
+                <li><a class="header__link" href="#contacts">Связаться</a></li>
             </ul>
         </div>
     </header>
     <!--  -->
     <main class="content">
 
-        <section class="lab" name="lab">
+        <section class="lab">
+            <a name="lab"></a>
             <div class="container">
                 <div class="lab__title">INDUSTRIAL AI RESEARCH LAB</div>
 
@@ -78,7 +79,7 @@
                             <a href="#" class="btn btn-round lab-popup">Подробнее</a>
                         </div>
                     </div>
-                    <div class="lab__card lab__card-active">
+                    <div class="lab__card">
                         <div class="lab__card-title">Инфраструктура больших данных</div>
                         <div class="lab__card-icon">
                             <img src="./images/Lab/Vector-2.svg" alt="Инфраструктура больших данных">
@@ -117,10 +118,10 @@
                 </div>
 
             </div>
-
         </section>
       
         <section class="projects container" name="projects">
+            <a name="projects"></a>
             <h2 class="projects__title">Наши проекты</h2>
             <nav class="projects__menu">
                 <ul class="projects__list">
@@ -164,6 +165,7 @@
         </section>
     
         <section class="education">
+            <a name="education"></a>
             <h2 class="education__title">Образование</h2>
             <p class="education__text">
                 В образовательной деятельности НЦКР активно использует существующую в Университете ИТМО инфраструктуру
@@ -261,6 +263,7 @@
         </section>
 
         <section class="partners">
+            <a name="partners"></a>
             <h2 class="partners__heading heading">с кем мы работаем</h2>
             <p class="partners__text text">За время сотрудничества компания показала себя как надежный партнер,
                 способный оперативно решать вопросы
@@ -293,6 +296,7 @@
         </section>
    
         <section class="in-touch container">
+            <a name="contacts"></a>
             <h2 class="in-touch__heading heading">всегда на связи</h2>
             <p class="in-touch__text text">По всем интересующим вас вопросам вы всегда можете обратиться по указанным
                 телефонам, написать на почту

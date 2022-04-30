@@ -1,13 +1,28 @@
-
-
 .lab {
   display: flex;
   flex-direction: column;
   background: #E0F0FF;
-  padding-top: 80px;
-  padding-bottom: 80px;
+  /* padding-top: 80px;
+  padding-bottom: 80px; */
+  padding-top: 40px;
+  padding-bottom: 40px;
   color: #000D26;
 }
+
+@media screen and (min-width: 480px) {
+  .lab {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .lab {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+}
+
+
 
 .lab__wrapper {
   margin-bottom: 80px;
