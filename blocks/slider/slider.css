@@ -1,0 +1,12 @@
+.splide.splide--ourTeam {
+  padding: 50px 0;
+}
+
+.splide.splide--ourTeam .splide__list {
+  display: flex;
+  align-content: stretch;
+}
+.splide.splide--ourTeam .splide__list .splide__slide {
+  display: flex;
+}
+

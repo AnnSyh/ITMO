@@ -6,7 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="./pages/index.css">
 
+    <!-- ---------likely---------- -->
     <link rel="stylesheet" href="./vendor/likely/likely.css">
+    <script type="module" src="./vendor/likely/likely.js"></script>
+    <!-- ---------likely---------- -->
+
+    <!-- ---------splide(slider)---------- -->
+    <script type="module" src="./vendor/splide/splide.min.js"></script>
+    <link rel="stylesheet" href="./vendor/splide/splide.min.css">
+    <!-- ---------/splide(slider)---------- -->
+
 
     <title>Лаборатория ИТМО</title>
 </head>
@@ -34,23 +43,23 @@
                     </ul>
                 </li>
                 <!-- <li><a class="header__link" href="#">Публикации</a></li> -->
-                <!-- <li><a class="header__link" href="#">Команда</a></li> -->
+                <li><a class="header__link" href="#ourTeam">Команда</a></li>
                 <li><a class="header__link" href="#contacts">Связаться</a></li>
             </ul>
         </div>
     </header>
     <!--  -->
     <main class="content">
-        
-     <section cognitive class="cognitive">
-        <div class="cognitive__column">
-            <h1 class="cognitive__heading">Когнитивные технологии, 
-                <span class="cognitive__heading_light">машинное обучение</span>
-            </h1>
-            <p class="cognitive__text">Системы прикладного искусственного интеллекта</p>
-            <button class="cognitive__button">наши проекты</button>
-        </div>
-    </section>
+
+        <section cognitive class="cognitive">
+            <div class="cognitive__column">
+                <h1 class="cognitive__heading">Когнитивные технологии,
+                    <span class="cognitive__heading_light">машинное обучение</span>
+                </h1>
+                <p class="cognitive__text">Системы прикладного искусственного интеллекта</p>
+                <button class="cognitive__button">наши проекты</button>
+            </div>
+        </section>
 
         <section class="lab">
             <a name="lab"></a>
@@ -129,7 +138,7 @@
 
             </div>
         </section>
-      
+
         <section class="projects container" name="projects">
             <a name="projects"></a>
             <h2 class="projects__title">Наши проекты</h2>
@@ -173,7 +182,7 @@
                     id="projects__arrow-button_right"></button>
             </div>
         </section>
-    
+
         <section class="education">
             <a name="education"></a>
             <h2 class="education__title">Образование</h2>
@@ -272,6 +281,69 @@
             </div>
         </section>
 
+        <!-- ---------slider---------- -->
+        <section class="ourTeam">
+            <a name="ourTeam"></a>
+            <h2 class="ourTeam__title">Наша команда</h2>
+            <div class="splide splide--ourTeam " data-splide='{"type":"loop","perMove":1}' aria-label="">
+                <div class="splide__track">
+                    <ul class="splide__list">
+                        <li class="splide__slide">
+                            <div class="ourTeam__item">
+                                <img class="ourTeam__img" src="./images/Team/man photo.png" alt="">
+                                <div class="ourTeam__name">Бобцов Алексей Алексеевич</div>
+                                <div class="ourTeam__post">Директор, профессор, ДТН</div>
+                            </div>
+                        </li>
+                        <li class="splide__slide">
+                            <div class="ourTeam__item">
+                                <img class="ourTeam__img" src="./images/Team/man photo-1.png" alt="">
+                                <div class="ourTeam__name">Буханоский Александр Валерьевич</div>
+                                <div class="ourTeam__post">Директор, профессор, ДТН</div>
+                            </div>
+                        </li>
+                        <li class="splide__slide">
+                            <div class="ourTeam__item">
+                                <img class="ourTeam__img" src="./images/Team/man photo-2.png" alt="">
+                                <div class="ourTeam__name">Бобцов Алексей Алексеевич</div>
+                                <div class="ourTeam__post">Директор, профессор, ДТН</div>
+                            </div>
+                        </li>
+                        <li class="splide__slide">
+                            <div class="ourTeam__item">
+                                <img class="ourTeam__img" src="./images/Team/man photo-3.png" alt="">
+                                <div class="ourTeam__name">Буханоский Александр Валерьевич</div>
+                                <div class="ourTeam__post">Директор, профессор, ДТН</div>
+                            </div>
+                        </li>
+                        <li class="splide__slide">
+                            <div class="ourTeam__item">
+                                <img class="ourTeam__img" src="./images/Team/man photo-4.png" alt="">
+                                <div class="ourTeam__name">Бобцов Алексей Алексеевич</div>
+                                <div class="ourTeam__post">Директор, профессор, ДТН</div>
+                            </div>
+                        </li>
+                        <li class="splide__slide">
+                            <div class="ourTeam__item">
+                                <img class="ourTeam__img" src="./images/Team/man photo-5.png" alt="">
+                                <div class="ourTeam__name">Буханоский Александр Валерьевич</div>
+                                <div class="ourTeam__post">Директор, профессор, ДТН</div>
+                            </div>
+                        </li>
+                        <li class="splide__slide">
+                            <div class="ourTeam__item">
+                                <img class="ourTeam__img" src="./images/Team/man photo-6.png" alt="">
+                                <div class="ourTeam__name">Бобцов Алексей Алексеевич</div>
+                                <div class="ourTeam__post">Директор, профессор, ДТН</div>
+                            </div>
+                        </li>
+    
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <!-- ---------/slider---------- -->
+
         <section class="partners">
             <a name="partners"></a>
             <h2 class="partners__heading heading">с кем мы работаем</h2>
@@ -304,7 +376,7 @@
                 </li>
             </ul>
         </section>
-   
+
         <section class="in-touch container">
             <a name="contacts"></a>
             <h2 class="in-touch__heading heading">всегда на связи</h2>
@@ -325,7 +397,7 @@
                 <button class="in-touch__submit" type="submit">Отправить</button>
             </form>
         </section>
-    
+
     </main>
     <footer class="footer">
         <div class="container footer__container">
@@ -499,13 +571,6 @@
     </div>
 
 
-
-    <script type="module" src="./pages/index.js"></script>
-    <!-- <script type="module" src="./vendor/likely/likely.js"></script> -->
-
-
-
-
     <template class="projects__template">
         <div class="projects__card">
             <img src="images/projects__Gazprom.svg" alt="Логотип Газпрома" class="projects__logo" />
@@ -520,7 +585,40 @@
     </template>
 
     <script type="module" src="./pages/index.js"></script>
+   
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var splide = new Splide('.splide', {
+                perPage: 4,
+                gap:30,
+                arrowPath: './images/OurTeam/ButtonRoundRight.svg',
+                classes: {
+                    // Add classes for arrows.
+                    arrows: 'splide__arrows ourTeam-arrows',
+                    arrow: 'splide__arrow ourTeam-arrow',
+                    prev: 'splide__arrow--prev ourTeam-prev',
+                    next: 'splide__arrow--next ourTeam-next',
 
+                    // Add classes for pagination.
+                    pagination: 'splide__pagination ourTeam-pagination', // container
+                    page: 'splide__pagination__page ourTeam-page', // each button
+                },
+                breakpoints: {
+                    1300: {
+                        perPage: 3,
+                        gap:20,
+                        arrows:false,
+                    },
+                    600: {
+                        perPage: 2,
+                        gap:8,
+                        arrows:false,
+                    },
+                },
+            });
+            splide.mount();
+        });
+    </script>
 
 </body>
 

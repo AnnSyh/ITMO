@@ -121,3 +121,12 @@
 @import url(../blocks/education/__button/_active/education__button_active.css);
 @import url(../blocks/education/__container/education__container.css);
 
+@import url(../blocks/slider/slider.css);
+
+@import url(../blocks/ourTeam/ourTeam.css);
+@import url(../blocks/ourTeam/__item/ourTeam__item.css);
+@import url(../blocks/ourTeam/__title/ourTeam__title.css);
+@import url(../blocks/ourTeam/__img/ourTeam__img.css);
+@import url(../blocks/ourTeam/__name/ourTeam__name.css);
+@import url(../blocks/ourTeam/ourTeam-arrow/ourTeam-arrow.css);
+
