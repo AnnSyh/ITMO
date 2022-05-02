@@ -7,8 +7,10 @@ import projectsCards from "../utils/projectsCards.js";
 import ProjectsSlider from "./ProjectsSlider.js";
 import EducationSwitch from "./EducationSwitch.js";
 
-const curentPopupConfirmation = document.querySelector(".confirmation__popup");
+// const curentPopupConfirmation = document.querySelector(".confirmation__popup");
 const curentPopupIndustrialLab = document.querySelector(".industrialLab__popup");
+const headerNav = document.querySelector(".header__nav");
+const headerNavClose = document.querySelector(".new-header .popup__close");
 const menuBtn = document.querySelector(".hamburger");
 // const labPopup = document.querySelector(".lab-popup");
 const labPopups = document.querySelectorAll(".lab-popup");
@@ -24,18 +26,18 @@ dropdownLi.forEach(element => {
 
 // -------------------- задаем попап------------------------
 // 1) попап с мобильным меню
-const popupConfirmation = new Popup(
-  curentPopupConfirmation,
-  openConfirm,
-  closeConfirm
-); // <==  создаем эл-т класса Popup
-popupConfirmation.setEventListeners(); //установка поведения при клике на X и на overlay
-function openConfirm(evt) {
-  popupConfirmation.openPopup(); // <==  открываем попап ==
-}
-function closeConfirm(evt) {
-  popupConfirmation.closePopup(); // <==  закрываем попап ==
-}
+// const popupConfirmation = new Popup(
+//   curentPopupConfirmation,
+//   openConfirm,
+//   closeConfirm
+// ); // <==  создаем эл-т класса Popup
+// popupConfirmation.setEventListeners(); //установка поведения при клике на X и на overlay
+// function openConfirm(evt) {
+//   popupConfirmation.openPopup(); // <==  открываем попап ==
+// }
+// function closeConfirm(evt) {
+//   popupConfirmation.closePopup(); // <==  закрываем попап ==
+// }
 
 // 2) попап с мобильным меню
 const popupIndustrialLab = new Popup(
@@ -51,18 +53,28 @@ function closeIndustrialLab(evt) {
   popupIndustrialLab.closePopup();
 }
 
+function handleMenu(evt) {
+  headerNav.classList.toggle('header__nav_visible');
+}
+
+function closeMenu(evt) {
+  headerNav.classList.remove('header__nav_visible');
+}
+
 // -------------------- /попап------------------------
 
 //подтверждение удаления
-function handleConfirmDelete() {
-  popupConfirmation.openPopup(); //открываем окно подтверждения
-}
+// function handleConfirmDelete() {
+//   popupConfirmation.openPopup(); //открываем окно подтверждения
+// }
 function handleIndustrialLabDelete() {
   popupIndustrialLab.openPopup();
 }
 
 //вешаем событие на кнопки(открывющие попапы)
-menuBtn.addEventListener("click", handleConfirmDelete);
+menuBtn.addEventListener("click", handleMenu);
+headerNavClose.addEventListener("click", closeMenu);
+// menuBtn.addEventListener("click", handleConfirmDelete);
 // labPopup.addEventListener("click", handleIndustrialLabDelete);
 
 labPopups.forEach((element) => {

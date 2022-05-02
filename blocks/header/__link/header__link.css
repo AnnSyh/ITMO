@@ -7,9 +7,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
+    /* padding-left: 15px; */
 }
 
-.header__link:hover::after{
+.header__link:hover::after {
     content: '';
     position: absolute;
     width: 100%;
@@ -17,4 +19,15 @@
     background-color: #009FAC;
     top: 70%;
     left: 0px;
+}
+
+@media screen and (max-width: 868px) {
+    .header__link {
+        padding-left: 15px;
+        width: calc(100% - 15px);  
+    }
+
+    .header__link:hover::after{
+        content: none;
+    }
 }
