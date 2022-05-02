@@ -25,13 +25,20 @@
     <!-- header -->
     <header class="header">
 
-        <div class="hamburger">
-            <img class="logo" src="./images/burger-menu.svg" alt="бургер">
-        </div>
-
         <div class="container header__container">
-            <img class="logo header__container__logo" src="./images/header-logo.svg" alt="логотип ИТМО">
+
+            <div class="header__mobile">
+                <div class="hamburger">
+                    <img class="hamburger__img" src="./images/burger-menu.svg" alt="бургер">
+                </div>
+                <img class="logo header__container__logo" src="./images/header-logo.svg" alt="логотип ИТМО">
+            </div>
+
             <ul class="header__nav">
+                <li class="new-header">
+                    <img class="logo header__container__logo" src="./images/header-logo.svg" alt="логотип ИТМО">
+                    <button class="popup__close popup__close_add-plaсe" type="button"></button>
+                </li>
                 <li><a class="header__link header__link_active" href="#partners">О нас</a></li>
                 <li><a class="header__link" href="#lab">Лаборатория</a></li>
                 <li><a class="header__link" href="#projects">Проекты</a></li>
@@ -47,6 +54,7 @@
                 <li><a class="header__link" href="#contacts">Связаться</a></li>
             </ul>
         </div>
+        
     </header>
     <!--  -->
     <main class="content">
@@ -483,39 +491,6 @@
         </div>
 
     </footer>
-
-    <div class="confirmation">
-        <div class="popup confirmation__popup">
-            <div class="popup__overlay"></div>
-            <div class="popup__container">
-                <!-- <div class="form-place"></div> -->
-                <div class="popup__content">
-                    <button class="popup__close popup__close_add-plaсe" type="button"></button>
-
-                    <img class="logo" src="./images/header-logo.svg" alt="логотип ИТМО">
-                    <!-- <ul class="header__nav-mobile"> -->
-                    <ul class="header__nav-mobile">
-                        <li><a class="header__link header__link_active" href="#">О нас</a></li>
-                        <li><a class="header__link" href="#">Лаборатория</a></li>
-                        <li><a class="header__link" href="#">Проекты</a></li>
-                        <li class="dropdown">
-                            <a class="header__link dropbtn" href="#">Образование</a>
-                            <ul class="dropdown-content">
-                                <li><a class="header__link" href="#">Магистратура</a></li>
-                                <li><a class="header__link" href="#">Аспирантура</a></li>
-                            </ul>
-                        </li>
-                        <li><a class="header__link" href="#">Публикации</a></li>
-                        <li><a class="header__link" href="#">Команда</a></li>
-                        <li><a class="header__link" href="#">Связаться</a></li>
-                    </ul>
-
-
-
-                </div>
-            </div>
-        </div>
-    </div>
 
     <div class="industrialLab">
         <div class="popup industrialLab__popup">
