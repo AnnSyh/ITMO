@@ -77,4 +77,3 @@ projectSlider.setEventListenersToSelectProjectButtons();
 
 const educationSwitch = new EducationSwitch();
 educationSwitch.setEventListeners();
-
