@@ -6,9 +6,9 @@
   flex-direction: column;
   /* margin: 0 15px; */
   align-items: center;
-  height: 430px;
+  height: 356px;
   max-width: 250px;
-  width: calc(100%/4 - 3*20px);
+  width: calc(100%/4 - 3*23px);
   justify-content: space-between;
 
   position: relative;

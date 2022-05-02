@@ -9,11 +9,13 @@ import EducationSwitch from "./EducationSwitch.js";
 
 // const curentPopupConfirmation = document.querySelector(".confirmation__popup");
 const curentPopupIndustrialLab = document.querySelector(".industrialLab__popup");
+const arrowTop = document.querySelector(".arrow-top");
 const headerNav = document.querySelector(".header__nav");
 const headerNavClose = document.querySelector(".new-header .popup__close");
 const menuBtn = document.querySelector(".hamburger");
 // const labPopup = document.querySelector(".lab-popup");
 const labPopups = document.querySelectorAll(".lab-popup");
+const cognitiveButton = document.querySelector(".cognitive__button");
 
 const dropdownLi = document.querySelectorAll(".dropdown");
 
@@ -61,6 +63,13 @@ function closeMenu(evt) {
   headerNav.classList.remove('header__nav_visible');
 }
 
+function goTo(evt) {
+  window.location.href = '#projects';
+}
+function top(evt) {
+  window.location.href = '#top';
+}
+
 // -------------------- /попап------------------------
 
 //подтверждение удаления
@@ -80,6 +89,20 @@ headerNavClose.addEventListener("click", closeMenu);
 labPopups.forEach((element) => {
   element.addEventListener("click", handleIndustrialLabDelete);
 });
+
+cognitiveButton.addEventListener("click", goTo);
+
+arrowTop.addEventListener("click", top);
+
+window.addEventListener('scroll', function(evt) {
+
+  if (window.scrollY > 200){
+    arrowTop.classList.add('arrow-top__visible');
+  } else {
+    arrowTop.classList.remove('arrow-top__visible');
+  }
+});
+
 
 const projectSlider = new ProjectsSlider(projectsCards);
 projectSlider.setEventListenersToProjectButtons();
